@@ -1,0 +1,9 @@
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\bin\Debug\emvecre.exe.config
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\bin\Debug\emvecre.exe
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\bin\Debug\emvecre.pdb
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\obj\Debug\frmFacturacion.csprojAssemblyReference.cache
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\obj\Debug\emvecre.Properties.Resources.resources
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\obj\Debug\frmFacturacion.csproj.GenerateResource.cache
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\obj\Debug\frmFacturacion.csproj.CoreCompileInputs.cache
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\obj\Debug\emvecre.exe
+D:\chepe\Documents\Proyecto Final\emvecre\emvecre\obj\Debug\emvecre.pdb
