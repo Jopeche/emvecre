@@ -67,3 +67,38 @@ C:\Users\chepe\Desktop\Empresa Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.
 C:\Users\chepe\Desktop\Empresa Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.CopyComplete
 C:\Users\chepe\Desktop\Empresa Emvecre\emvecre\emvecre\obj\Debug\emvecre.exe
 C:\Users\chepe\Desktop\Empresa Emvecre\emvecre\emvecre\obj\Debug\emvecre.pdb
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\emvecre.exe.config
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\emvecre.exe
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\emvecre.pdb
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\Reportes.exe
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\Reportes.pdb
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\bin\Debug\Reportes.exe.config
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.AssemblyReference.cache
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.SuggestedBindingRedirects.cache
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.ResolveComReference.cache
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.Art_lista.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmArticulos.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmBuscarCliente.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmBuscarVendedor.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmClientes.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmDepartamentos.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmFacturar.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmInventario.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmLogin.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmMenuFacturacion.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmMenuPrincipal.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmProcesarFactura.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmProveedores.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmUsuarios.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmVendedores.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.Ingresar_compra.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.Properties.Resources.resources
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.GenerateResource.cache
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.CoreCompileInputs.cache
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.CopyComplete
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.exe
+C:\Users\chepe\Desktop\Emvecre\emvecre\emvecre\obj\Debug\emvecre.pdb

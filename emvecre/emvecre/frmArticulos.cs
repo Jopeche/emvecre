@@ -383,7 +383,7 @@ namespace emvecre
         //modifica datos en la tabla articulos
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            try { 
+            
             bool accion = ct.buscarArticulo(Txtcodigo1.Text);
 
             if (accion==true) { 
@@ -393,7 +393,7 @@ namespace emvecre
             if (resultado == DialogResult.Yes)
             {
                     ct.buscarDepartamento(cmbDep.Text);
-                    ct.actualizarArticulo(Txtcodigo1.Text, Txtcodigo2.Text, txtnombre.Text, Convert.ToDecimal(txtstock.Text), ConexTablas.idDepartamento, Convert.ToDecimal(txtcosto.Text), Convert.ToDecimal(txtprecio.Text), txtimpuesto.Text);
+                    ct.actualizarArticulo(Txtcodigo1.Text, Txtcodigo2.Text, txtnombre.Text, Convert.ToDouble(txtstock.Text), ConexTablas.idDepartamento, Convert.ToDouble(txtcosto.Text), Convert.ToDouble(txtprecio.Text), txtimpuesto.Text);
                 MessageBox.Show("DATOS ACTUALIZADOS CORRECTAMENTE");
                 ct.MostrarDatos(dgvArticulos);
                 Limpiar();
@@ -407,8 +407,7 @@ namespace emvecre
                 MessageBox.Show("EL ARTICULO NO EXISTE, VERIFIQUE EL CODIGO 1");
                 Limpiar();
             }
-            }
-            catch { }
+          
         }
 
         //limpia los campos de texto

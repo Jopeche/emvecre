@@ -56,6 +56,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnFactu1 = new System.Windows.Forms.Button();
+            this.btnFact2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
@@ -196,6 +198,7 @@
             this.dgvFactura.Size = new System.Drawing.Size(1502, 582);
             this.dgvFactura.TabIndex = 6;
             this.dgvFactura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellClick);
+            this.dgvFactura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellContentClick);
             this.dgvFactura.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellEndEdit);
             this.dgvFactura.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellLeave);
             this.dgvFactura.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvFactura_CellPainting);
@@ -401,12 +404,33 @@
             this.label2.TabIndex = 57;
             this.label2.Text = "Procesar";
             // 
+            // btnFactu1
+            // 
+            this.btnFactu1.Location = new System.Drawing.Point(1289, 5);
+            this.btnFactu1.Name = "btnFactu1";
+            this.btnFactu1.Size = new System.Drawing.Size(75, 61);
+            this.btnFactu1.TabIndex = 58;
+            this.btnFactu1.Text = "Factura1";
+            this.btnFactu1.UseVisualStyleBackColor = true;
+            this.btnFactu1.Click += new System.EventHandler(this.btnFactu1_Click);
+            // 
+            // btnFact2
+            // 
+            this.btnFact2.Location = new System.Drawing.Point(1386, 5);
+            this.btnFact2.Name = "btnFact2";
+            this.btnFact2.Size = new System.Drawing.Size(75, 61);
+            this.btnFact2.TabIndex = 59;
+            this.btnFact2.Text = "Factura2";
+            this.btnFact2.UseVisualStyleBackColor = true;
+            // 
             // frmFacturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1547, 1027);
+            this.Controls.Add(this.btnFact2);
+            this.Controls.Add(this.btnFactu1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
@@ -473,5 +497,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnFactu1;
+        private System.Windows.Forms.Button btnFact2;
     }
 }

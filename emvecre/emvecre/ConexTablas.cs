@@ -54,7 +54,7 @@ namespace emvecre
 
         //variables para los departamentos
         public static int idDepartamento;
-        public static string nombreDep;
+        public  static string nombreDep;
 
         //variables para los usuarios
         public static string admin;
@@ -1012,7 +1012,7 @@ namespace emvecre
         }
 
         //metodo que busca los departamentos por nombre
-        public bool buscarDepartamento(string nombre)
+        public void buscarDepartamento(string nombre)
         {
     
 
@@ -1047,7 +1047,7 @@ namespace emvecre
             {
                 miDr.Close();
             }
-            return resulta;
+           
         }
 
         //metodo para el calcular el subtotal de la compra realizada
@@ -1110,7 +1110,7 @@ namespace emvecre
         }
 
         ////metodo para actualizar un dato en la tabla articulos
-        public void actualizarArticulo(string codigo1, string codigo2, string nombre, decimal existencia, int idDepartamento, decimal costo, decimal precio, string imp)
+        public void actualizarArticulo(string codigo1, string codigo2, string nombre, double existencia, int idDepartamento, double costo, double precio, string imp)
         {
 
 
@@ -1128,9 +1128,9 @@ namespace emvecre
             misParametros[7] = new SqlParameter("@impuesto", imp);
 
 
-            String sql = "UPDATE " + tablaArticulo + " set codigo2 = '"+codigo2+ "', nombre = '" + nombre + "' , cantidad_stock = '" + existencia + "', idDepartamento = '" + idDepartamento + "',"
+            String sql = "UPDATE " + tablaArticulo + " set codigo2 = '" +codigo2+ "', nombre = '" + nombre + "' , cantidad_stock = '" + existencia + "', idDepartamento = '" + idDepartamento + "',"
                    +     "  costo = '" + costo + "', precio = '" + precio + "', impuesto = '" + imp + "' where codigo1 = '"+codigo1+"'";
-
+           
             objMiconexion.ejecutarSentencia(sql, misParametros);
         }
         

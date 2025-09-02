@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using emvecre;
 
 namespace emvecre
 {
@@ -581,6 +582,18 @@ namespace emvecre
         private void lblVendedor_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvFactura_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnFactu1_Click(object sender, EventArgs e)
+        {
+            Facturas f = new Facturas();
+            ElemenFactura elemento = new ElemenFactura();
+            f.llenarFactura(elemento, dgvFactura);
         }
     }
 }

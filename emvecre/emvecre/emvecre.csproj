@@ -57,6 +57,8 @@
     <Compile Include="ConexSQL.cs" />
     <Compile Include="ConexTablas.cs" />
     <Compile Include="CrearTablas.cs" />
+    <Compile Include="ElemenFactura.cs" />
+    <Compile Include="Facturas.cs" />
     <Compile Include="frmArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
