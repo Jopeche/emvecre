@@ -33,6 +33,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -76,6 +80,12 @@
     </Compile>
     <Compile Include="frmBuscarVendedor.Designer.cs">
       <DependentUpon>frmBuscarVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCierreCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCierreCaja.Designer.cs">
+      <DependentUpon>frmCierreCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="frmClientes.cs">
       <SubType>Form</SubType>
@@ -162,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarVendedor.resx">
       <DependentUpon>frmBuscarVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCierreCaja.resx">
+      <DependentUpon>frmCierreCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
@@ -337,6 +350,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CierreCaja1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -133,7 +133,23 @@ namespace emvecre
             btnDevolucion.BackColor = Color.White;
         }
 
-        private void btnFacturar_Click(object sender, EventArgs e)
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            abrirFormulario<frmCierreCaja>();
+        }
+
+        private void btnCierreCaja_MouseEnter(object sender, EventArgs e)
+        {
+            btnCierreCaja.BackColor = Color.LightBlue;
+        }
+
+        private void btnCierreCaja_MouseLeave(object sender, EventArgs e)
+        {
+            btnCierreCaja.BackColor = Color.White;
+        }
+
+        private void panelOperaciones_Paint(object sender, PaintEventArgs e)
         {
 
         }

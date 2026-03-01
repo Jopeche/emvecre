@@ -121,6 +121,11 @@ namespace emvecre
             }
             catch { }
         }
+
+        private void btnSalir_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
     }
     }
 

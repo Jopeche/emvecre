@@ -93,6 +93,16 @@ namespace emvecre.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CierreCaja {
+            get {
+                object obj = ResourceManager.GetObject("CierreCaja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Clientes {
             get {
                 object obj = ResourceManager.GetObject("Clientes", resourceCulture);

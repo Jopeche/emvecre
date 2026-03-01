@@ -47,7 +47,7 @@ namespace emvecre
 
         public void obtenerFactura(ElemenFactura elementos, TextBox cliente)
         {
-            factura.TryGetValue("cliente", cliente.Text);
+            //factura.TryGetValue("cliente", cliente.Text);
 
         }
 

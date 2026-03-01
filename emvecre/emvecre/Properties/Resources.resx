@@ -124,6 +124,9 @@
   <data name="Factu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Factu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Proveedores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proveedores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,14 +145,8 @@
   <data name="Aceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aceptar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Reporte Compras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reporte Compras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Facturar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Facturar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Inventario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Inventario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +157,17 @@
   <data name="Logo Emvecre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo Emvecre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reporte Compras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reporte Compras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Proveedores" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Proveedores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="equis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\equis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +184,8 @@
   <data name="Modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Facturar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facturar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Reimprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reimprimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,7 +196,7 @@
   <data name="Procesar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Procesar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CierreCaja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CierreCaja1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

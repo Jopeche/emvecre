@@ -34,14 +34,14 @@ namespace emvecre
         //crear tabla de ventas
         public static string tablaVentas = "ventas";
 
-        public const string Cad_Grid_ventas = "idVenta,idCliente,idVendedor,fecha,total";
+        public const string Cad_Grid_ventas = "idVenta,idCliente,idVendedor,tipoPago,fecha,total,estado";
 
         public static void crear_tabla_ventas()
         {
             ConexSQL objMiconexion = new ConexSQL();
 
             String sql = "IF NOT EXISTS (select name from sysobjects where name ='" + tablaVentas + "') CREATE TABLE " + tablaVentas + "(idVenta int IDENTITY(1,1) not null, idCliente int NOT NULL,idVendedor int NOT NULL," +
-                "fecha smalldatetime NOT NULL , total numeric(10,2) NOT NULL, PRIMARY KEY(idVenta) );";
+                "tipoPago nvarchar(15) NOT NUll,fecha smalldatetime NOT NULL , total numeric(10,2) NOT NULL, estado nvarchar(2), PRIMARY KEY(idVenta) );";
             objMiconexion.ejecutarSentenciaSql(sql);
         }
 
@@ -58,6 +58,8 @@ namespace emvecre
             String sql = "IF NOT EXISTS (select name from sysobjects where name ='" + tablaClientes + "') CREATE TABLE " + tablaClientes + "(idCliente int IDENTITY(1,1) not null, nombre_cliente nvarchar(50) NOT NULL, fecha_nacimiento Date," +
                 "cedula nvarchar(10) NOT NULL, direccion_cliente nvarchar(256), telefono_cliente nvarchar(50), email_cliente nvarchar(100), PRIMARY KEY(idCliente) );";
             objMiconexion.ejecutarSentenciaSql(sql);
+
+
         }
 
         //crear tabla para los departamentos
@@ -156,6 +158,17 @@ namespace emvecre
             ConexSQL objMiconexion = new ConexSQL();
             String sql = "IF NOT EXISTS (select name from sysobjects where name ='" + tablaAdmin + "') CREATE TABLE " + tablaAdmin + "(id int IDENTITY(1,1) not null,nombre nvarchar(50) NOT NULL,contrasena nvarchar(50) NOT NULL, admin nvarchar(7), " +
                 "PRIMARY KEY (contrasena));";
+            objMiconexion.ejecutarSentenciaSql(sql);
+
+        }
+
+        public static string tablaCierreCaja = "CierreCaja";
+        public static void crear_tabla_cierre_caja()
+        {
+            ConexSQL objMiconexion = new ConexSQL();
+            String sql = "IF NOT EXISTS (select name from sysobjects where name ='" + tablaCierreCaja + "') CREATE TABLE " + tablaCierreCaja + "(idCierre int IDENTITY(1,1) not null," +
+                "fecha date NOT NULL, ventasTotales money NOT NULL, totalEfectivo money NOT NULL, totalTarjeta money NOT NULL, totalTrans money NOT NULL," +
+                " repEfectivo money NOT NULL, repTarjeta money NOT NULL);";
             objMiconexion.ejecutarSentenciaSql(sql);
 
         }

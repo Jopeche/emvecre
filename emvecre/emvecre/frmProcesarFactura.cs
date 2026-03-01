@@ -15,6 +15,7 @@ namespace emvecre
    
     public partial class frmProcesarFactura : Form
     {
+        
    
         public frmProcesarFactura()
         {
@@ -24,7 +25,8 @@ namespace emvecre
         //carga los datos necesarios
         private void frmProcesarFactura_Load(object sender, EventArgs e)
         {
-            txtPaga.Focus();
+            rdbEfectivo.Checked = true; 
+            txtEfectivo.Focus();
             btnCancelar.BackColor = Color.SkyBlue;
             btnFacturar.BackColor = Color.SkyBlue;
         }
@@ -33,10 +35,10 @@ namespace emvecre
         private void txtPaga_KeyDown(object sender, KeyEventArgs e)
         {
             
-            if (e.KeyValue == (char)Keys.Enter && txtPaga.Text != "")
+            if (e.KeyValue == (char)Keys.Enter && txtEfectivo.Text != "")
             {
                 decimal total = Convert.ToDecimal(lblTotal.Text);
-                decimal paga = Convert.ToDecimal(txtPaga.Text);
+                decimal paga = Convert.ToDecimal(txtEfectivo.Text);
                 if (paga >= total)
                 {
                     decimal cambio = paga - total;
@@ -61,7 +63,7 @@ namespace emvecre
             try
             {
                 decimal total = Convert.ToDecimal(lblTotal.Text);
-                decimal paga = Convert.ToDecimal(txtPaga.Text);
+                decimal paga = Convert.ToDecimal(txtEfectivo.Text);
                 if (paga >= total)
                 {
                     decimal cambio = paga - total;
@@ -85,7 +87,7 @@ namespace emvecre
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             lblCambio.Text = "0";
-            txtPaga.Focus();
+            txtEfectivo.Focus();
             this.Close();
         }
         //metodo para realizar la venta
@@ -93,9 +95,23 @@ namespace emvecre
         {
             frmFacturar f1 = Application.OpenForms.OfType<frmFacturar>().SingleOrDefault();
 
-            if(txtPaga.Text=="" || txtPaga.Text == "." || Convert.ToDouble(txtPaga.Text)==0 || Convert.ToDouble(txtPaga.Text)< Convert.ToDouble(lblTotal.Text))
+            if (rdbEfectivo.Checked == true)
             {
-                txtPaga.Text = lblTotal.Text;
+                f1.tipoPago = "Efectivo";
+
+            }
+            if (rdbTarjeta.Checked == true)
+            {
+                f1.tipoPago = "Tarjeta";
+            }
+            else
+            {
+                f1.tipoPago = "Transferencia";
+            }
+
+            if (txtEfectivo.Text=="" || txtEfectivo.Text == "." || Convert.ToDouble(txtEfectivo.Text)==0 || Convert.ToDouble(txtEfectivo.Text)< Convert.ToDouble(lblTotal.Text))
+            {
+                txtEfectivo.Text = lblTotal.Text;
                 lblCambio.Text = "0";
                 MessageBox.Show("El efectivo no puede ser inferior al monto a pagar");
             }
@@ -104,8 +120,11 @@ namespace emvecre
             {
 
                 f1.permitir = true;
+               
                 this.Close();
                 }
+
+            
             }
            
         }
@@ -124,7 +143,7 @@ namespace emvecre
                 }
             }
 
-            string punto = txtPaga.Text;
+            string punto = txtEfectivo.Text;
             int pun = 0;
 
             for (int i = 0; i < punto.Length; i++)
@@ -169,7 +188,7 @@ namespace emvecre
         //habilita el boton de procesar factura
         private void txtPaga_Validated(object sender, EventArgs e)
         {
-            while (txtPaga.Text == "")
+            while (txtEfectivo.Text == "")
             {
                 btnFacturar.Enabled = false;
 
@@ -178,7 +197,7 @@ namespace emvecre
         //Deshabilita el boton de procesar factura
         private void txtPaga_Validating(object sender, CancelEventArgs e)
         {
-            while (txtPaga.Text=="")
+            while (txtEfectivo.Text=="")
             {
                 btnFacturar.Enabled = false;
 
@@ -190,9 +209,23 @@ namespace emvecre
            
             frmFacturar f1 = Application.OpenForms.OfType<frmFacturar>().SingleOrDefault();
 
-            if (txtPaga.Text == "" || txtPaga.Text == "." || Convert.ToDouble(txtPaga.Text) == 0 || Convert.ToDouble(txtPaga.Text) < Convert.ToDouble(lblTotal.Text))
+            if (rdbEfectivo.Checked==true) {
+                f1.tipoPago = "Efectivo";
+                
+            }else if (rdbTarjeta.Checked==true)
             {
-                txtPaga.Text = lblTotal.Text;
+                f1.tipoPago = "Tarjeta";
+            }
+            else
+            {
+                f1.tipoPago = "Transferencia";
+            }
+
+
+
+            if (txtEfectivo.Text == "" || txtEfectivo.Text == "." || Convert.ToDouble(txtEfectivo.Text) == 0 || Convert.ToDouble(txtEfectivo.Text) < Convert.ToDouble(lblTotal.Text))
+            {
+                txtEfectivo.Text = lblTotal.Text;
                 lblCambio.Text = "0";
                 MessageBox.Show("El efectivo no puede ser inferior al monto a pagar");
             }
@@ -200,8 +233,8 @@ namespace emvecre
             {
                 if (f1 != null)
                 {
-
                     f1.permitir = true;
+
                     this.Close();
                 }
             }

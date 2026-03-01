@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -12,6 +14,7 @@ namespace emvecre
         public frmMenuPrincipal()
         {
             InitializeComponent();
+           
             //conexion a la base de datos
             ConexSQL.conectar();
 
@@ -27,10 +30,48 @@ namespace emvecre
             crearTablas.crear_tabla_ventas(); //creacion de la tabla Ventas
             crearTablas.crear_tabla_detalle_ventas(); //creacion de la tabla Detalle ventas
             crearTablas.crearusuarios(); //creacion de la tabla usuarios                              
+            crearTablas.crear_tabla_cierre_caja(); //Creacion de la tabla cierre de caja
+            iniciarProyecto();
         }
+
+        public void iniciarProyecto()
+        {
+            ConexTablas ct = new ConexTablas();
+            DateTime dateTime = DateTime.Now;
+            string sql = "select * from clientes";
+            SqlDataReader miDr;
+            miDr = ConexSQL.consultarInformacionSinParm(sql);
+            if (miDr.HasRows==false)
+            {
+                ct.guardarCliente("CLIENTE CONTADO",dateTime,"000000000","","","");
+                sql = "";
+                miDr.Dispose();
+            }
+            sql = "select * from vendedor";
+            miDr = ConexSQL.consultarInformacionSinParm(sql);
+            if(miDr.HasRows==false)
+            {
+                ct.guardarVend("SISTEMA");
+                sql = "";
+                miDr.Dispose();
+            }
+            sql = "select * from departamento";
+            miDr = ConexSQL.consultarInformacionSinParm(sql);
+            if (miDr.HasRows == false)
+            {
+                ct.guardarDep("GENERAL","Departamento general de articulos");
+                sql = "";
+                miDr.Dispose();
+            }
+        }
+
+
+
+
         //Metodo para abrir formularios en el panel
         private void abrirFormulario<miform>() where miform : Form, new()
         {
+            
             Form formulario;
             formulario = panelOperaciones.Controls.OfType<miform>().FirstOrDefault();
             if (formulario == null)
@@ -65,6 +106,7 @@ namespace emvecre
         private void btnMInimizar_MouseEnter(object sender, EventArgs e)
         {
             btnMInimizar.BackColor = Color.LightBlue;
+
         }
 
         private void btnClose_MouseEnter(object sender, EventArgs e)
@@ -87,105 +129,126 @@ namespace emvecre
         {
             abrirFormulario<frmMenuFacturacion>();
 
-            PanelPrincipal.Visible = false;
         }
 
         private void btnFacturar_MouseEnter(object sender, EventArgs e)
         {
             btnFacturar.BackColor = Color.LightBlue;
+            btnFacturar.Height = btnFacturar.Height + 5;
+            btnFacturar.Width = btnFacturar.Width + 5;
         }
 
         private void btnCompras_MouseEnter(object sender, EventArgs e)
         {
             btnCompras.BackColor = Color.LightBlue;
+            btnCompras.Height = btnCompras.Height + 5;
+            btnCompras.Width = btnCompras.Width + 5;
         }
 
         private void btnInventario_MouseEnter(object sender, EventArgs e)
         {
             btnInventario.BackColor = Color.LightBlue;
+            btnInventario.Height = btnInventario.Height + 5;
+            btnInventario.Width = btnInventario.Width + 5;
         }
 
         private void btnClientes_MouseEnter(object sender, EventArgs e)
         {
             btnClientes.BackColor = Color.LightBlue;
+            btnClientes.Height = btnClientes.Height + 5;
+            btnClientes.Width = btnClientes.Width + 5;
         }
 
         private void btnProveedores_MouseEnter(object sender, EventArgs e)
         {
             btnProveedores.BackColor = Color.LightBlue;
+            btnProveedores.Height = btnProveedores.Height + 5;
+            btnProveedores.Width = btnProveedores.Width + 5;
         }
 
         private void btnFacturar_MouseLeave(object sender, EventArgs e)
         {
             btnFacturar.BackColor = Color.White;
+            btnFacturar.Height = btnFacturar.Height - 5;
+            btnFacturar.Width = btnFacturar.Width - 5;
         }
 
         private void btnCompras_MouseLeave(object sender, EventArgs e)
         {
             btnCompras.BackColor = Color.White;
+            btnCompras.Height = btnCompras.Height - 5;
+            btnCompras.Width = btnCompras.Width - 5;
         }
 
         private void btnInventario_MouseLeave(object sender, EventArgs e)
         {
             btnInventario.BackColor = Color.White;
+            btnInventario.Height = btnInventario.Height - 5;
+            btnInventario.Width = btnInventario.Width - 5;
         }
 
         private void btnClientes_MouseLeave(object sender, EventArgs e)
         {
             btnClientes.BackColor = Color.White;
+            btnClientes.Height = btnClientes.Height - 5;
+            btnClientes.Width = btnClientes.Width - 5;
         }
 
         private void btnProveedores_MouseLeave(object sender, EventArgs e)
         {
             btnProveedores.BackColor = Color.White;
+            btnProveedores.Height = btnProveedores.Height - 5;
+            btnProveedores.Width = btnProveedores.Width - 5;
         }
 
         //abre el formulario para ingresar compras
         private void btnCompras_Click(object sender, EventArgs e)
         {
             abrirFormulario<Ingresar_compra>();
-            PanelPrincipal.Visible = false;
         }
 
         //abre el formulario de inventario
         private void btnInventario_Click(object sender, EventArgs e)
         {
             abrirFormulario<frmInventario>();
-            PanelPrincipal.Visible = false;
         }
         //abre el formulario de clientes
         private void btnClientes_Click(object sender, EventArgs e)
         {
             abrirFormulario<frmClientes>();
-            PanelPrincipal.Visible = false;
         }
         //abre el formulario de proveedores
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             abrirFormulario<frmProveedores>();
-            PanelPrincipal.Visible = false;
 
         }
 
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        private void btnVendedores_MouseEnter(object sender, EventArgs e)
         {
             btnVendedores.BackColor = Color.LightBlue;
+            btnVendedores.Height = btnVendedores.Height + 5;
+            btnVendedores.Width = btnVendedores.Width + 5;
         }
+
 
         private void btnVendedores_MouseLeave(object sender, EventArgs e)
         {
             btnVendedores.BackColor = Color.White;
+            btnVendedores.Height = btnVendedores.Height - 5;
+            btnVendedores.Width = btnVendedores.Width - 5;
+
         }
         //abre el formulario de vendedores
         private void btnVendedores_Click(object sender, EventArgs e)
         {
             abrirFormulario<frmVendedores>();
-            PanelPrincipal.Visible = false;
         }
 
         private void btnUsuarios_MouseEnter(object sender, EventArgs e)
         {
             btnUsuarios.BackColor = Color.LightBlue;
+
         }
 
         private void btnUsuarios_MouseLeave(object sender, EventArgs e)
@@ -201,34 +264,40 @@ namespace emvecre
         private void btnVentas_Click(object sender, EventArgs e)
         {
             abrirFormulario<FrmMenuReporte>();
-            PanelPrincipal.Visible = false;
         }
 
         private void btnVentas_MouseEnter(object sender, EventArgs e)
         {
             btnVentas.BackColor = Color.LightBlue;
+            btnVentas.Height = btnVentas.Height + 5;
+            btnVentas.Width = btnVentas.Width + 5;
         }
 
         private void btnVentas_MouseLeave(object sender, EventArgs e)
         {
             btnVentas.BackColor = Color.White;
+            btnVentas.Height = btnVentas.Height - 5;
+            btnVentas.Width = btnVentas.Width - 5;
         }
 
         private void btnRepCompras_MouseEnter(object sender, EventArgs e)
         {
             btnRepCompras.BackColor = Color.LightBlue;
+            btnRepCompras.Height = btnRepCompras.Height + 5;
+            btnRepCompras.Width = btnRepCompras.Width + 5;
         }
 
         private void btnRepCompras_MouseLeave(object sender, EventArgs e)
         {
             btnRepCompras.BackColor = Color.White;
+            btnRepCompras.Height = btnRepCompras.Height - 5;
+            btnRepCompras.Width = btnRepCompras.Width - 5;
         }
 
         //abre el formulario de reporte de compras
         private void btnRepCompras_Click(object sender, EventArgs e)
         {
             abrirFormulario<Compras>();
-            PanelPrincipal.Visible = false;
         }
     }
 }

@@ -16,11 +16,15 @@ namespace emvecre
         ConexTablas ct = new ConexTablas();
     
         public bool permitir = false;
+        public string tipoPago = "";
+        public string nombreArticulo="";
 
         public frmFacturar()
         {
             InitializeComponent();
+            
         }
+
         
         private void btnBuscarCliente_MouseEnter(object sender, EventArgs e)
         {
@@ -120,6 +124,7 @@ namespace emvecre
         //verifica el codigo de articulo ingresado y al presionar "enter" el foco cambia a la caja de txto cantidad
         private void txtArticulo_KeyDown(object sender, KeyEventArgs e)
         {
+           
             bool resulta = false;
             if (e.KeyValue == (char)Keys.Enter)
             {
@@ -129,10 +134,12 @@ namespace emvecre
                 {
                     txtCantidad.Text = "1";
                     txtCantidad.Focus();
+                    lblNombreArticulo.Text = ct.nomArticulo();
                 }
                 else
                 {
                     txtArticulo.Text = "";
+                    lblNombreArticulo.Text = "";
                     txtArticulo.Focus();
                     MessageBox.Show("EL CODIGO INGRESADO NO EXISTE");
                     }
@@ -204,29 +211,25 @@ namespace emvecre
                     {
                         if (codigo1 == Convert.ToString(filas.Cells["Codigo"].Value) || ConexTablas.codigo2 == Convert.ToString(filas.Cells["Codigo"].Value))
                         {
+                            MessageBox.Show("El articulo ya fue ingresdo puede modificarlo manualmente");
                             txtArticulo.Focus();
                             txtCantidad.Text = "1";
                             txtArticulo.Text = "";
+                            lblNombreArticulo.Text = "";
+                            resulta = true;
                         }
-                     
-
 
                     }
+                    if (resulta==false) {
 
-
-
-                    resulta = ct.cargarArticulosVenta(dgvFactura, txtArticulo.Text, nombre, precio, decimal.Parse(txtCantidad.Text));
-                  
-                    if (resulta == true)
-                    {
+                        resulta = ct.cargarArticulosVenta(dgvFactura, txtArticulo.Text, nombre, precio, decimal.Parse(txtCantidad.Text));
+                        txtArticulo.Focus();
                         txtCantidad.Text = "1";
                         txtArticulo.Text = "";
-                        txtArticulo.Focus();
+                        lblNombreArticulo.Text = "";
                     }
-                    else
-                    {
-
-                    }
+                  
+                
                     ct.calculoCompra(dgvFactura, txtSubtotal);
                     decimal total = Convert.ToDecimal(txtSubtotal.Text) + Convert.ToDecimal(txtImpuesto.Text);
                     total = decimal.Round(total, 2);
@@ -317,7 +320,8 @@ namespace emvecre
 
         //metodo de consulta para eliminar un articulo del datagridview al presionar sobre la celda de eliminar
         private void dgvFactura_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
+        { 
+           
             DialogResult resultado;
             try
             {
@@ -395,14 +399,16 @@ namespace emvecre
             DataGridViewTextBoxEditingControl OnlyNumbers = (DataGridViewTextBoxEditingControl)e.Control;
             OnlyNumbers.KeyPress -= new KeyPressEventHandler(dgvFactura_KeyPress);
             OnlyNumbers.KeyPress += new KeyPressEventHandler(dgvFactura_KeyPress);
+
+           
         }
 
         //metodo que solo permite numeros y un punto para los decimales en el datagridview
         private void dgvFactura_KeyPress(object sender, KeyPressEventArgs e)
         {
+            
             try
             {
-               
 
                 string p = dgvFactura.CurrentCell.EditedFormattedValue.ToString();
                 int pun = 0;
@@ -440,8 +446,13 @@ namespace emvecre
                         }
 
                     }
-                }
+
+                    
+           
+        }
+
             }
+            
             catch { }
         }
 
@@ -453,7 +464,7 @@ namespace emvecre
             if (dgvFactura.Rows.Count > 0)
             {
                 pf.lblTotal.Text = txtTotal.Text;
-                pf.txtPaga.Text=txtTotal.Text;
+                pf.txtEfectivo.Text=txtTotal.Text;
                 pf.ShowDialog();
             }
             else
@@ -466,8 +477,9 @@ namespace emvecre
                 ct.buscarCliente(txtCliente.Text);
                 ct.buscarVendedor(txtVendedor.Text, bv.dgvVendedores);
                 DateTime fecha = DateTime.Now;
+                char estado = 'n';
            
-                ct.guardarVenta(ConexTablas.idCliente, ConexTablas.idVendedor, fecha, Convert.ToDecimal(txtTotal.Text));
+                ct.guardarVenta(ConexTablas.idCliente, ConexTablas.idVendedor, tipoPago, fecha, Convert.ToDecimal(txtTotal.Text),estado);
 
                 ct.buscarVenta();
 
@@ -539,14 +551,8 @@ namespace emvecre
             catch { }
         }
 
-        private void dgvFactura_CellLeave(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
 
-        private void dgvFactura_KeyDown(object sender, KeyEventArgs e)
-        {
-        }
+    
 
         //metodo para evitar que el usuario valide una cantidad nula o igual a cero dentro de las celdas
         private void dgvFactura_CellValidated(object sender, DataGridViewCellEventArgs e)
@@ -555,7 +561,6 @@ namespace emvecre
             if (p == "")
             {
                 dgvFactura.CurrentCell.Value = 1;
-
             }
         }
 
@@ -584,10 +589,6 @@ namespace emvecre
 
         }
 
-        private void dgvFactura_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnFactu1_Click(object sender, EventArgs e)
         {
@@ -595,5 +596,6 @@ namespace emvecre
             ElemenFactura elemento = new ElemenFactura();
             f.llenarFactura(elemento, dgvFactura);
         }
+       
     }
 }

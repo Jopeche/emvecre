@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.txtArticulo = new System.Windows.Forms.TextBox();
@@ -59,23 +59,23 @@
             // 
             this.dgvArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArticulos.BackgroundColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArticulos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArticulos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvArticulos.Location = new System.Drawing.Point(12, 83);
             this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
@@ -97,23 +97,24 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::emvecre.Properties.Resources.Regresar;
-            this.btnSalir.Location = new System.Drawing.Point(12, 487);
+            this.btnSalir.Location = new System.Drawing.Point(22, 489);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(135, 75);
+            this.btnSalir.Size = new System.Drawing.Size(116, 62);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSalir.TabIndex = 13;
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             this.btnSalir.MouseEnter += new System.EventHandler(this.btnSalir_MouseEnter);
             this.btnSalir.MouseLeave += new System.EventHandler(this.btnSalir_MouseLeave);
+            this.btnSalir.MouseHover += new System.EventHandler(this.btnSalir_MouseHover);
             // 
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.White;
             this.btnAceptar.Image = global::emvecre.Properties.Resources.Aceptar;
-            this.btnAceptar.Location = new System.Drawing.Point(671, 487);
+            this.btnAceptar.Location = new System.Drawing.Point(681, 489);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(135, 75);
+            this.btnAceptar.Size = new System.Drawing.Size(116, 62);
             this.btnAceptar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnAceptar.TabIndex = 14;
             this.btnAceptar.TabStop = false;
@@ -125,9 +126,9 @@
             // 
             this.btnArtFactu.BackColor = System.Drawing.Color.White;
             this.btnArtFactu.Image = global::emvecre.Properties.Resources.Aceptar;
-            this.btnArtFactu.Location = new System.Drawing.Point(671, 487);
+            this.btnArtFactu.Location = new System.Drawing.Point(559, 489);
             this.btnArtFactu.Name = "btnArtFactu";
-            this.btnArtFactu.Size = new System.Drawing.Size(135, 75);
+            this.btnArtFactu.Size = new System.Drawing.Size(116, 62);
             this.btnArtFactu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnArtFactu.TabIndex = 15;
             this.btnArtFactu.TabStop = false;

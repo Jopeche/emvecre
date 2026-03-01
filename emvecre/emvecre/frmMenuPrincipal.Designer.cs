@@ -237,7 +237,7 @@
             this.btnVendedores.TabIndex = 11;
             this.btnVendedores.TabStop = false;
             this.btnVendedores.Click += new System.EventHandler(this.btnVendedores_Click);
-            this.btnVendedores.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.btnVendedores.MouseEnter += new System.EventHandler(this.btnVendedores_MouseEnter);
             this.btnVendedores.MouseLeave += new System.EventHandler(this.btnVendedores_MouseLeave);
             // 
             // btnProveedores

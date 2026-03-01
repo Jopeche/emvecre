@@ -560,20 +560,22 @@ namespace emvecre
 
 
         //metodo que guarda la venta(cliente, vendedor, fecha y total) en la tabla venta
-        public void guardarVenta(int idCliente, int idVendedor, DateTime fecha, decimal total)
+        public void guardarVenta(int idCliente, int idVendedor,string tipoPago, DateTime fecha, decimal total, char estado)
         {
             ConexSQL objMiconexion = new ConexSQL();
 
 
-            SqlParameter[] misParametros = new SqlParameter[4];
+            SqlParameter[] misParametros = new SqlParameter[6];
             misParametros[0] = new SqlParameter("@idCliente", idCliente);
             misParametros[1] = new SqlParameter("@idVendedor", idVendedor);
-            misParametros[2] = new SqlParameter("@fecha", fecha);
-            misParametros[3] = new SqlParameter("@total", total);
+            misParametros[2] = new SqlParameter("@tipoPago", tipoPago);
+            misParametros[3] = new SqlParameter("@fecha", fecha);
+            misParametros[4] = new SqlParameter("@total", total);
+            misParametros[5] = new SqlParameter("@estado", estado);
 
 
-            String sql = "INSERT INTO " + tablaVentas + "(idCliente,idVendedor,fecha,total)" +
-                          " VALUES (@idCliente,@idVendedor,@fecha,@total)";
+            String sql = "INSERT INTO " + tablaVentas + "(idCliente,idVendedor,tipoPago,fecha,total,estado)" +
+                          " VALUES (@idCliente,@idVendedor,@tipoPago,@fecha,@total,@estado)";
 
             objMiconexion.ejecutarSentencia(sql, misParametros);
         }
@@ -696,7 +698,7 @@ namespace emvecre
                 {
                     stock_final = cantidad_stock - cantidad;
 
-                    sql = "update Articulos set cantidad_stock = " + stock_final + " WHERE codigo1 = " + codigo1;
+                    sql = "UPDATE Articulos set cantidad_stock = " + stock_final + " WHERE codigo1 = " + codigo1;
                     cs.ejecutarSentenciaSql(sql);
                 }
 
@@ -836,7 +838,6 @@ namespace emvecre
                 {
                     resulta = true;
 
-
                     codigo1 = miDr["codigo1"].ToString();
                     codigo2 = miDr["codigo2"].ToString();
                     nombre = miDr["nombre"].ToString();
@@ -925,7 +926,7 @@ namespace emvecre
                         imp = decimal.Round(imp, 2);
                     }
                     f1.txtImpuesto.Text = imp.ToString();
-
+                    
                     datos.Rows.Add(codigo1, nombre, precio, cantidad, descuento, subtotal);
 
                 }
@@ -975,6 +976,7 @@ namespace emvecre
 
             ConexSQL objMiconexion = new ConexSQL();
             Ingresar_compra f1 = Application.OpenForms.OfType<Ingresar_compra>().SingleOrDefault();
+            frmFacturar facturar = new frmFacturar();
 
             SqlDataReader miDr;
             SqlParameter[] misParametros = new SqlParameter[1];
@@ -993,14 +995,11 @@ namespace emvecre
                     costo = (decimal)miDr["costo"];
                     impuesto = miDr["impuesto"].ToString();
                     cantidad_stock = (decimal)miDr["cantidad_stock"];
-
+                    nomb_articulo = miDr["nombre"].ToString();
                 }
                 else
                 {
-                    resulta = false;
-             
-
-
+                    resulta = false;          
                 }
 
             }
@@ -1008,7 +1007,14 @@ namespace emvecre
             {
                 miDr.Close();
             }
+
             return resulta;
+            
+        }
+        public string nomArticulo()
+        {
+            
+            return nomb_articulo;
         }
 
         //metodo que busca los departamentos por nombre

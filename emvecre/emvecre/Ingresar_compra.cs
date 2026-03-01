@@ -66,6 +66,7 @@ namespace emvecre
         
         //agrega la cantidad de articulo y lo carga en el datagridview
         private void txtCantidad_KeyDown_1(object sender, KeyEventArgs e)
+        
         {
             bool resulta = false;
             if (e.KeyValue == (char)Keys.Enter)
@@ -84,37 +85,25 @@ namespace emvecre
                       
                         if (codigo1 == Convert.ToString(filas.Cells["Codigo"].Value) || ConexTablas.codigo2 == Convert.ToString(filas.Cells["Codigo"].Value))
                         {
-                           
+                            MessageBox.Show("El articulo ya fue ingresdo puede modificarlo manualmente");
                             txtArticulo.Focus();
                             txtCantidad.Text = "1";
                             txtArticulo.Text = "";
                             txtPrecio.Text = "";
-
-
+                            resulta = true;
                         }
+                        
                     }
-
-
-                    try
+                    if (resulta == false)
                     {
-
                         resulta = ct.cargarArticulosCompra(dgvCompra, txtArticulo.Text, decimal.Parse(txtPrecio.Text), nombre, precio, decimal.Parse(txtCantidad.Text));
-                    }
-                    catch
-                    {
-                        MessageBox.Show("El articulo ya fue ingresdo puede modificarlo manualmente");
+                        txtArticulo.Focus();
                         txtCantidad.Text = "1";
                         txtArticulo.Text = "";
                         txtPrecio.Text = "";
-                        txtArticulo.Focus();
                     }
-                    if (resulta == true)
-                    {
-                        txtCantidad.Text = "1";
-                        txtArticulo.Text = "";
-                        txtPrecio.Text = "";
-                        txtArticulo.Focus();
-                    }
+
+                
                     ct.calculoCompra(dgvCompra, txtSubtotal);
                     decimal total = Convert.ToDecimal(txtSubtotal.Text) + Convert.ToDecimal(txtImpuesto.Text);
 
