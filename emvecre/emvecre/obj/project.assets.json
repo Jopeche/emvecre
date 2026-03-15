@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reportes/1.0.0": {
+      "type": "project",
+      "path": "../Reportes/Reportes/Reportes.csproj",
+      "msbuildProject": "../Reportes/Reportes/Reportes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Reportes >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\chepe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Emvecre\\emvecre\\emvecre\\emvecre.csproj",
+      "projectName": "emvecre",
+      "projectPath": "D:\\Emvecre\\emvecre\\emvecre\\emvecre.csproj",
+      "packagesPath": "C:\\Users\\chepe\\.nuget\\packages\\",
+      "outputPath": "D:\\Emvecre\\emvecre\\emvecre\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\chepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {
+            "D:\\Emvecre\\emvecre\\Reportes\\Reportes\\Reportes.csproj": {
+              "projectPath": "D:\\Emvecre\\emvecre\\Reportes\\Reportes\\Reportes.csproj"
+            }
+          }
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

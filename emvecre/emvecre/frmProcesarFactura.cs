@@ -104,7 +104,7 @@ namespace emvecre
             {
                 f1.tipoPago = "Tarjeta";
             }
-            else
+             if (rdbTransferencia.Checked == true)
             {
                 f1.tipoPago = "Transferencia";
             }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using CrystalDecisions.Windows.Forms;
 
 
 
@@ -89,6 +90,8 @@ namespace emvecre
 
         //Variable de administradores
         public static string tablaAdmin = "usuarios";
+
+        public static string tablaCierreCaja = "CierreCaja";
 
         //LLena un comboBox con los proveedores guandados en la tabla proveedores
         public void llenarComboProveedores(ComboBox Combo_Prov)
@@ -1594,6 +1597,63 @@ namespace emvecre
             return resulta;
         }
      
+        public void cerrarCaja(DateTime fecha, decimal repEfectivo, decimal repTarjeta)
+        {
+            ConexSQL objMiconexion = new ConexSQL();
+            SqlDataReader miDr = null;
+            
+
+            SqlParameter[] misParametros = new SqlParameter[3];
+            misParametros[0] = new SqlParameter("@fecha", fecha);
+            misParametros[1] = new SqlParameter("@repEfectivo", repEfectivo);
+            misParametros[2] = new SqlParameter("@repTarjeta", repTarjeta);
+
+
+            String sql = "INSERT INTO " + tablaCierreCaja + "(fecha,repEfectivo,repTarjeta)" +
+                          " VALUES (@fecha,@repEfectivo,@repTarjeta)";
+
+            String consultar = "select * from "+ tablaCierreCaja +" where fecha ='"+fecha+"'";
+
+
+            
+
+            miDr = ConexSQL.consultarInformacionSinParm(consultar); 
+            miDr.Read();
+            if (miDr.HasRows)
+            {
+                MessageBox.Show("EL CIERRE DE CAJA YA FUE CREADO");
+            }
+            else
+            {
+                objMiconexion.ejecutarSentencia(sql, misParametros);
+                MessageBox.Show("CIERRE COMPLETADO CORRECTAMENTE", "ACEPTAR");
+            }
+
+            
+        }
+        
+        public Cierre reporteCierreCaja()
+        {
+            Cierre cr = new Cierre();
+            DateTime fecha = DateTime.Today;
+            CrystalReportViewer view = new CrystalReportViewer();
+            ConexSQL objMiconexion = new ConexSQL();
+            string sql = "select * from ventas; select * from CierreCaja;";    
+            System.Data.SqlClient.SqlCommand cmd = new SqlCommand(sql, ConexSQL.miConexion);
+
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            SqlDataAdapter da2 = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(ds, "View");
+            dt = ds.Tables["View"];
+            cr.SetDataSource(ds.Tables["View"]);
+           
+            return cr;
+            
+;        }
 
     }
 }

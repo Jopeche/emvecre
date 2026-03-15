@@ -163,14 +163,15 @@ namespace emvecre
         }
 
         public static string tablaCierreCaja = "CierreCaja";
+
+        public const string Cad_Grid_cierre_caja = "idCierre,fecha,repEfectivo,repTarjeta";
+
         public static void crear_tabla_cierre_caja()
         {
             ConexSQL objMiconexion = new ConexSQL();
             String sql = "IF NOT EXISTS (select name from sysobjects where name ='" + tablaCierreCaja + "') CREATE TABLE " + tablaCierreCaja + "(idCierre int IDENTITY(1,1) not null," +
-                "fecha date NOT NULL, ventasTotales money NOT NULL, totalEfectivo money NOT NULL, totalTarjeta money NOT NULL, totalTrans money NOT NULL," +
-                " repEfectivo money NOT NULL, repTarjeta money NOT NULL);";
+                "fecha date NOT NULL, repEfectivo money NOT NULL, repTarjeta money NOT NULL);";
             objMiconexion.ejecutarSentenciaSql(sql);
-
         }
     }
 }
