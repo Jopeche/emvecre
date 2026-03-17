@@ -32,10 +32,12 @@
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnIngresar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.btnIngresar)).BeginInit();
+            this.btnIngresar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIngresar)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -86,18 +88,17 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Contraseña";
             // 
-            // btnIngresar
+            // pictureBox1
             // 
-            this.btnIngresar.Image = global::emvecre.Properties.Resources.Aceptar;
-            this.btnIngresar.Location = new System.Drawing.Point(563, 489);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(172, 97);
-            this.btnIngresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnIngresar.TabIndex = 4;
-            this.btnIngresar.TabStop = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
-            this.btnIngresar.MouseEnter += new System.EventHandler(this.btnIngresar_MouseEnter);
-            this.btnIngresar.MouseLeave += new System.EventHandler(this.btnIngresar_MouseLeave);
+            this.pictureBox1.BackgroundImage = global::emvecre.Properties.Resources.Logo_Emvecre1;
+            this.pictureBox1.Image = global::emvecre.Properties.Resources.Logo_Emvecre1;
+            this.pictureBox1.Location = new System.Drawing.Point(114, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(532, 371);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnSalir
             // 
@@ -112,14 +113,27 @@
             this.btnSalir.MouseEnter += new System.EventHandler(this.btnSalir_MouseEnter);
             this.btnSalir.MouseLeave += new System.EventHandler(this.btnSalir_MouseLeave);
             // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Image = global::emvecre.Properties.Resources.Aceptar;
+            this.btnIngresar.Location = new System.Drawing.Point(563, 489);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(172, 97);
+            this.btnIngresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.TabStop = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            this.btnIngresar.MouseEnter += new System.EventHandler(this.btnIngresar_MouseEnter);
+            this.btnIngresar.MouseLeave += new System.EventHandler(this.btnIngresar_MouseLeave);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.BackgroundImage = global::emvecre.Properties.Resources.Logo_Emvecre;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(774, 598);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.label1);
@@ -133,8 +147,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnIngresar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIngresar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,5 +163,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnIngresar;
         private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

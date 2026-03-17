@@ -60,7 +60,7 @@
             this.btnBuscarVendedor.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarVendedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarVendedor.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarVendedor.Image")));
-            this.btnBuscarVendedor.Location = new System.Drawing.Point(760, 130);
+            this.btnBuscarVendedor.Location = new System.Drawing.Point(394, 212);
             this.btnBuscarVendedor.Name = "btnBuscarVendedor";
             this.btnBuscarVendedor.Size = new System.Drawing.Size(43, 38);
             this.btnBuscarVendedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             this.btnBuscarCliente.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCliente.Image")));
-            this.btnBuscarCliente.Location = new System.Drawing.Point(760, 87);
+            this.btnBuscarCliente.Location = new System.Drawing.Point(394, 169);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(43, 37);
             this.btnBuscarCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +91,7 @@
             this.rdbVentas.Checked = true;
             this.rdbVentas.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbVentas.Location = new System.Drawing.Point(1009, 20);
+            this.rdbVentas.Location = new System.Drawing.Point(353, 39);
             this.rdbVentas.Name = "rdbVentas";
             this.rdbVentas.Size = new System.Drawing.Size(248, 34);
             this.rdbVentas.TabIndex = 148;
@@ -105,7 +105,7 @@
             this.rdbVendedor.AutoSize = true;
             this.rdbVendedor.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbVendedor.Location = new System.Drawing.Point(1009, 95);
+            this.rdbVendedor.Location = new System.Drawing.Point(353, 126);
             this.rdbVendedor.Name = "rdbVendedor";
             this.rdbVendedor.Size = new System.Drawing.Size(320, 34);
             this.rdbVendedor.TabIndex = 147;
@@ -118,7 +118,7 @@
             this.rdbCliente.AutoSize = true;
             this.rdbCliente.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbCliente.Location = new System.Drawing.Point(1009, 71);
+            this.rdbCliente.Location = new System.Drawing.Point(353, 102);
             this.rdbCliente.Name = "rdbCliente";
             this.rdbCliente.Size = new System.Drawing.Size(291, 34);
             this.rdbCliente.TabIndex = 146;
@@ -131,7 +131,7 @@
             this.rdbClienteVendedor.AutoSize = true;
             this.rdbClienteVendedor.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbClienteVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbClienteVendedor.Location = new System.Drawing.Point(1009, 43);
+            this.rdbClienteVendedor.Location = new System.Drawing.Point(353, 62);
             this.rdbClienteVendedor.Name = "rdbClienteVendedor";
             this.rdbClienteVendedor.Size = new System.Drawing.Size(451, 34);
             this.rdbClienteVendedor.TabIndex = 145;
@@ -143,9 +143,9 @@
             // 
             this.txtVendedor.Enabled = false;
             this.txtVendedor.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendedor.Location = new System.Drawing.Point(174, 130);
+            this.txtVendedor.Location = new System.Drawing.Point(139, 213);
             this.txtVendedor.Name = "txtVendedor";
-            this.txtVendedor.Size = new System.Drawing.Size(580, 37);
+            this.txtVendedor.Size = new System.Drawing.Size(249, 37);
             this.txtVendedor.TabIndex = 144;
             this.txtVendedor.Text = "SISTEMA";
             this.txtVendedor.TextChanged += new System.EventHandler(this.txtVendedor_TextChanged);
@@ -155,7 +155,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label4.Location = new System.Drawing.Point(16, 138);
+            this.label4.Location = new System.Drawing.Point(12, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 30);
             this.label4.TabIndex = 143;
@@ -165,9 +165,9 @@
             // 
             this.txtCliente.Enabled = false;
             this.txtCliente.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCliente.Location = new System.Drawing.Point(174, 87);
+            this.txtCliente.Location = new System.Drawing.Point(139, 170);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(580, 37);
+            this.txtCliente.Size = new System.Drawing.Size(249, 37);
             this.txtCliente.TabIndex = 142;
             this.txtCliente.Text = "CLIENTE CONTADO";
             this.txtCliente.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
@@ -177,7 +177,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label3.Location = new System.Drawing.Point(16, 95);
+            this.label3.Location = new System.Drawing.Point(12, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 30);
             this.label3.TabIndex = 141;
@@ -207,7 +207,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvVentas.Location = new System.Drawing.Point(6, 174);
+            this.dgvVentas.Location = new System.Drawing.Point(0, 286);
             this.dgvVentas.MultiSelect = false;
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.RowHeadersVisible = false;
@@ -216,7 +216,7 @@
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVentas.Size = new System.Drawing.Size(1512, 538);
+            this.dgvVentas.Size = new System.Drawing.Size(810, 408);
             this.dgvVentas.TabIndex = 140;
             this.dgvVentas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellClick_1);
             // 
@@ -224,9 +224,9 @@
             // 
             this.dtpHasta.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpHasta.Location = new System.Drawing.Point(174, 42);
+            this.dtpHasta.Location = new System.Drawing.Point(139, 80);
             this.dtpHasta.Name = "dtpHasta";
-            this.dtpHasta.Size = new System.Drawing.Size(249, 37);
+            this.dtpHasta.Size = new System.Drawing.Size(168, 37);
             this.dtpHasta.TabIndex = 139;
             this.dtpHasta.ValueChanged += new System.EventHandler(this.dtpHasta_ValueChanged);
             // 
@@ -235,7 +235,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label2.Location = new System.Drawing.Point(16, 50);
+            this.label2.Location = new System.Drawing.Point(12, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 30);
             this.label2.TabIndex = 138;
@@ -246,7 +246,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label1.Location = new System.Drawing.Point(16, 20);
+            this.label1.Location = new System.Drawing.Point(12, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 30);
             this.label1.TabIndex = 137;
@@ -256,9 +256,9 @@
             // 
             this.dtpDesde.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDesde.Location = new System.Drawing.Point(174, 12);
+            this.dtpDesde.Location = new System.Drawing.Point(139, 50);
             this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(249, 37);
+            this.dtpDesde.Size = new System.Drawing.Size(168, 37);
             this.dtpDesde.TabIndex = 136;
             this.dtpDesde.ValueChanged += new System.EventHandler(this.dtpDesde_ValueChanged);
             // 
@@ -267,7 +267,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Black", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label5.Location = new System.Drawing.Point(595, 9);
+            this.label5.Location = new System.Drawing.Point(313, -2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(332, 38);
             this.label5.TabIndex = 151;
@@ -277,7 +277,7 @@
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::Reportes.Properties.Resources.Salir;
-            this.btnSalir.Location = new System.Drawing.Point(1495, 0);
+            this.btnSalir.Location = new System.Drawing.Point(781, -2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(23, 21);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -289,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1547, 1022);
+            this.ClientSize = new System.Drawing.Size(806, 706);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnBuscarVendedor);

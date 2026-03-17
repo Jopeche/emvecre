@@ -259,6 +259,8 @@ D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\SqlServerTypes\x64\SqlServerSpati
 D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
 D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\Reportes.exe.config
+D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\Reportes.exe.manifest
+D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\Reportes.application
 D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\Reportes.exe
 D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\Reportes.pdb
 D:\Emvecre\emvecre\Reportes\Reportes\bin\Debug\Microsoft.ReportViewer.Common.dll
@@ -325,6 +327,8 @@ D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.frmVentasDepartamento.re
 D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.Properties.Resources.resources
 D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.csproj.GenerateResource.cache
 D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
+D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.exe.manifest
+D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.application
 D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.csproj.Up2Date
 D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.exe
 D:\Emvecre\emvecre\Reportes\Reportes\obj\Debug\Reportes.pdb

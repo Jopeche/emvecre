@@ -52,5 +52,42 @@ namespace emvecre
         {
             Close();
         }
+
+        private void OnlyNumbersCantidad(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar != '.')
+            {
+                if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+                {
+
+                    e.Handled = true;
+
+                    System.Media.SystemSounds.Beep.Play();
+                }
+            }
+
+            string punto = txtEfectivo.Text;
+            int pun = 0;
+
+            for (int i = 0; i < punto.Length; i++)
+            {
+                if (punto[i] == '.')
+                {
+                    pun++;
+                }
+                if (pun >= 1)
+                {
+                    if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+                    {
+
+                        e.Handled = true;
+
+                    }
+
+                }
+
+            }
+        }
     }
 }

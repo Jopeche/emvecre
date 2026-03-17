@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1267
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emvecre", "emvecre\emvecre.csproj", "{99AD01C5-5239-4ADB-971B-22D9CAA20988}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reportes", "Reportes\Reportes\Reportes.csproj", "{6AEBCAE1-6FA9-4D39-82B6-3B42095C5CA9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "setupPro", "setupPro\setupPro.vdproj", "{C09E5AD8-D17E-3A8D-D773-36413BCD2ECC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,9 @@ Global
 		{6AEBCAE1-6FA9-4D39-82B6-3B42095C5CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AEBCAE1-6FA9-4D39-82B6-3B42095C5CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AEBCAE1-6FA9-4D39-82B6-3B42095C5CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09E5AD8-D17E-3A8D-D773-36413BCD2ECC}.Debug|Any CPU.ActiveCfg = Debug
+		{C09E5AD8-D17E-3A8D-D773-36413BCD2ECC}.Release|Any CPU.ActiveCfg = Release
+		{C09E5AD8-D17E-3A8D-D773-36413BCD2ECC}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

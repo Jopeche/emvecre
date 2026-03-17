@@ -554,16 +554,6 @@ namespace emvecre
             this.Close();
         }
 
-        private void btnCancelar_MouseEnter(object sender, EventArgs e)
-        {
-            btnCancelar.BackColor = Color.LightBlue;
-        }
-
-        private void btnCancelar_MouseLeave(object sender, EventArgs e)
-        {
-            btnCancelar.BackColor = Color.White;
-        }
-
         private void btnProcesar_MouseEnter(object sender, EventArgs e)
         {
             btnProcesar.BackColor = Color.LightBlue;
@@ -640,6 +630,11 @@ namespace emvecre
         private void btnBuscarArticulo_MouseLeave(object sender, EventArgs e)
         {
             btnBuscarArticulo.BackColor = Color.White;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
     }

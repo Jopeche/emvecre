@@ -93,6 +93,16 @@ namespace Reportes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Regresar {
+            get {
+                object obj = ResourceManager.GetObject("Regresar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Reimprimir {
             get {
                 object obj = ResourceManager.GetObject("Reimprimir", resourceCulture);

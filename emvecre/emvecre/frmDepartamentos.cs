@@ -53,15 +53,7 @@ namespace emvecre
             txtDescripcion.Text = "";
             Txtbuscar.Text = "";
         }
-        private void btnSalir_MouseEnter(object sender, EventArgs e)
-        {
-            btnSalir.BackColor = Color.LightBlue;
-        }
-
-        private void btnSalir_MouseLeave(object sender, EventArgs e)
-        {
-            btnSalir.BackColor = Color.Silver;
-        }
+ 
 
         private void btnCacelar_MouseEnter(object sender, EventArgs e)
         {

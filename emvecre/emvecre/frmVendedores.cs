@@ -165,5 +165,10 @@ namespace emvecre
 
             }
         }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

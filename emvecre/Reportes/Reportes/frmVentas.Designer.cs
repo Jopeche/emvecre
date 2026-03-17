@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentas));
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,9 +59,9 @@
             // 
             this.dtpDesde.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDesde.Location = new System.Drawing.Point(170, 4);
+            this.dtpDesde.Location = new System.Drawing.Point(126, 116);
             this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(249, 37);
+            this.dtpDesde.Size = new System.Drawing.Size(242, 37);
             this.dtpDesde.TabIndex = 0;
             this.dtpDesde.ValueChanged += new System.EventHandler(this.dtpDesde_ValueChanged);
             // 
@@ -70,7 +70,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(-1, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 30);
             this.label1.TabIndex = 1;
@@ -81,7 +81,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.Location = new System.Drawing.Point(-1, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 30);
             this.label2.TabIndex = 2;
@@ -91,9 +91,9 @@
             // 
             this.dtpHasta.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpHasta.Location = new System.Drawing.Point(170, 34);
+            this.dtpHasta.Location = new System.Drawing.Point(126, 146);
             this.dtpHasta.Name = "dtpHasta";
-            this.dtpHasta.Size = new System.Drawing.Size(249, 37);
+            this.dtpHasta.Size = new System.Drawing.Size(242, 37);
             this.dtpHasta.TabIndex = 3;
             this.dtpHasta.ValueChanged += new System.EventHandler(this.dtpHasta_ValueChanged);
             // 
@@ -104,31 +104,31 @@
             this.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVentas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dgvVentas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvVentas.Location = new System.Drawing.Point(2, 166);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvVentas.Location = new System.Drawing.Point(2, 277);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.RowHeadersVisible = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvVentas.Size = new System.Drawing.Size(1515, 538);
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvVentas.Size = new System.Drawing.Size(619, 413);
             this.dgvVentas.TabIndex = 4;
             this.dgvVentas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellClick);
             // 
@@ -137,7 +137,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label3.Location = new System.Drawing.Point(12, 87);
+            this.label3.Location = new System.Drawing.Point(-1, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 30);
             this.label3.TabIndex = 6;
@@ -147,9 +147,9 @@
             // 
             this.txtCliente.Enabled = false;
             this.txtCliente.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCliente.Location = new System.Drawing.Point(170, 79);
+            this.txtCliente.Location = new System.Drawing.Point(126, 191);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(580, 37);
+            this.txtCliente.Size = new System.Drawing.Size(242, 37);
             this.txtCliente.TabIndex = 7;
             this.txtCliente.Text = "CLIENTE CONTADO";
             this.txtCliente.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
@@ -158,9 +158,9 @@
             // 
             this.txtVendedor.Enabled = false;
             this.txtVendedor.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendedor.Location = new System.Drawing.Point(170, 122);
+            this.txtVendedor.Location = new System.Drawing.Point(126, 234);
             this.txtVendedor.Name = "txtVendedor";
-            this.txtVendedor.Size = new System.Drawing.Size(580, 37);
+            this.txtVendedor.Size = new System.Drawing.Size(242, 37);
             this.txtVendedor.TabIndex = 10;
             this.txtVendedor.Text = "SISTEMA";
             this.txtVendedor.TextChanged += new System.EventHandler(this.txtVendedor_TextChanged);
@@ -170,7 +170,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label4.Location = new System.Drawing.Point(12, 130);
+            this.label4.Location = new System.Drawing.Point(-1, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 30);
             this.label4.TabIndex = 9;
@@ -181,7 +181,7 @@
             this.rdbClienteVendedor.AutoSize = true;
             this.rdbClienteVendedor.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbClienteVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbClienteVendedor.Location = new System.Drawing.Point(887, 34);
+            this.rdbClienteVendedor.Location = new System.Drawing.Point(14, 24);
             this.rdbClienteVendedor.Name = "rdbClienteVendedor";
             this.rdbClienteVendedor.Size = new System.Drawing.Size(451, 34);
             this.rdbClienteVendedor.TabIndex = 12;
@@ -194,7 +194,7 @@
             this.rdbCliente.AutoSize = true;
             this.rdbCliente.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbCliente.Location = new System.Drawing.Point(887, 62);
+            this.rdbCliente.Location = new System.Drawing.Point(14, 52);
             this.rdbCliente.Name = "rdbCliente";
             this.rdbCliente.Size = new System.Drawing.Size(291, 34);
             this.rdbCliente.TabIndex = 13;
@@ -207,7 +207,7 @@
             this.rdbVendedor.AutoSize = true;
             this.rdbVendedor.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbVendedor.Location = new System.Drawing.Point(887, 86);
+            this.rdbVendedor.Location = new System.Drawing.Point(14, 76);
             this.rdbVendedor.Name = "rdbVendedor";
             this.rdbVendedor.Size = new System.Drawing.Size(320, 34);
             this.rdbVendedor.TabIndex = 14;
@@ -221,7 +221,7 @@
             this.rdbVentas.Checked = true;
             this.rdbVentas.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.rdbVentas.Location = new System.Drawing.Point(887, 11);
+            this.rdbVentas.Location = new System.Drawing.Point(14, 1);
             this.rdbVentas.Name = "rdbVentas";
             this.rdbVentas.Size = new System.Drawing.Size(248, 34);
             this.rdbVentas.TabIndex = 15;
@@ -238,7 +238,7 @@
             this.BtnExpo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExpo.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExpo.ForeColor = System.Drawing.Color.Silver;
-            this.BtnExpo.Location = new System.Drawing.Point(2, 710);
+            this.BtnExpo.Location = new System.Drawing.Point(473, 237);
             this.BtnExpo.Name = "BtnExpo";
             this.BtnExpo.Size = new System.Drawing.Size(124, 36);
             this.BtnExpo.TabIndex = 133;
@@ -252,7 +252,7 @@
             this.btnBuscarCliente.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCliente.Image")));
-            this.btnBuscarCliente.Location = new System.Drawing.Point(756, 79);
+            this.btnBuscarCliente.Location = new System.Drawing.Point(374, 188);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(43, 37);
             this.btnBuscarCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -267,7 +267,7 @@
             this.btnBuscarVendedor.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarVendedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarVendedor.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarVendedor.Image")));
-            this.btnBuscarVendedor.Location = new System.Drawing.Point(756, 122);
+            this.btnBuscarVendedor.Location = new System.Drawing.Point(374, 231);
             this.btnBuscarVendedor.Name = "btnBuscarVendedor";
             this.btnBuscarVendedor.Size = new System.Drawing.Size(43, 38);
             this.btnBuscarVendedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -281,7 +281,7 @@
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::Reportes.Properties.Resources.Salir;
-            this.btnSalir.Location = new System.Drawing.Point(1494, 4);
+            this.btnSalir.Location = new System.Drawing.Point(598, 1);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(23, 21);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -294,7 +294,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1517, 1056);
+            this.ClientSize = new System.Drawing.Size(624, 702);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnBuscarVendedor);
             this.Controls.Add(this.btnBuscarCliente);

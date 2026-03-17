@@ -24,15 +24,7 @@ namespace emvecre
         {
             cmbTipo_doc.SelectedIndex =0;
         }
-        private void btnSalir_MouseEnter(object sender, EventArgs e)
-        {
-            btnSalir.BackColor = Color.LightBlue;
-        }
-
-        private void btnSalir_MouseLeave(object sender, EventArgs e)
-        {
-            btnSalir.BackColor = Color.Silver;
-        }
+    
 
         private void btnCacelar_MouseEnter(object sender, EventArgs e)
         {
@@ -184,6 +176,11 @@ namespace emvecre
 
                 MessageBox.Show("Debe selecionar un proveedor");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
     }

@@ -171,5 +171,10 @@ namespace emvecre
         {
             ct.buscarUsuario(Txtbuscar.Text, dgvUsuarios);
         }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

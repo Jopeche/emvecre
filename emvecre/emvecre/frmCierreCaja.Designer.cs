@@ -44,7 +44,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 9);
+            this.label1.Location = new System.Drawing.Point(1, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(247, 33);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 106);
+            this.label2.Location = new System.Drawing.Point(3, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 23);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 65);
+            this.label3.Location = new System.Drawing.Point(3, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(168, 23);
             this.label3.TabIndex = 2;
@@ -72,24 +72,26 @@
             // 
             // txtTarjeta
             // 
-            this.txtTarjeta.Location = new System.Drawing.Point(193, 106);
+            this.txtTarjeta.Location = new System.Drawing.Point(7, 167);
             this.txtTarjeta.Name = "txtTarjeta";
-            this.txtTarjeta.Size = new System.Drawing.Size(158, 20);
+            this.txtTarjeta.Size = new System.Drawing.Size(133, 20);
             this.txtTarjeta.TabIndex = 3;
             this.txtTarjeta.Text = "0";
+            this.txtTarjeta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbersCantidad);
             // 
             // txtEfectivo
             // 
-            this.txtEfectivo.Location = new System.Drawing.Point(193, 68);
+            this.txtEfectivo.Location = new System.Drawing.Point(7, 94);
             this.txtEfectivo.Name = "txtEfectivo";
-            this.txtEfectivo.Size = new System.Drawing.Size(158, 20);
+            this.txtEfectivo.Size = new System.Drawing.Size(133, 20);
             this.txtEfectivo.TabIndex = 4;
             this.txtEfectivo.Text = "0";
+            this.txtEfectivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbersCantidad);
             // 
             // btnGuardar
             // 
             this.btnGuardar.Image = global::emvecre.Properties.Resources.Guardar;
-            this.btnGuardar.Location = new System.Drawing.Point(16, 198);
+            this.btnGuardar.Location = new System.Drawing.Point(7, 246);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 50);
             this.btnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -100,7 +102,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::emvecre.Properties.Resources.Cancelar;
-            this.btnCancelar.Location = new System.Drawing.Point(251, 198);
+            this.btnCancelar.Location = new System.Drawing.Point(148, 246);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 50);
             this.btnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,16 +115,16 @@
             this.cvCierreCaja.ActiveViewIndex = -1;
             this.cvCierreCaja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cvCierreCaja.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cvCierreCaja.Location = new System.Drawing.Point(409, 9);
+            this.cvCierreCaja.Location = new System.Drawing.Point(254, 0);
             this.cvCierreCaja.Name = "cvCierreCaja";
-            this.cvCierreCaja.Size = new System.Drawing.Size(817, 771);
+            this.cvCierreCaja.Size = new System.Drawing.Size(549, 681);
             this.cvCierreCaja.TabIndex = 10;
             // 
             // frmCierreCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 792);
+            this.ClientSize = new System.Drawing.Size(806, 706);
             this.Controls.Add(this.cvCierreCaja);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);

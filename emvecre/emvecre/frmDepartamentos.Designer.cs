@@ -44,18 +44,15 @@
             this.btnEliminar = new System.Windows.Forms.PictureBox();
             this.btnGuardar = new System.Windows.Forms.PictureBox();
             this.btnCacelar = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepartamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCacelar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -63,7 +60,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Wide Latin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(982, 9);
+            this.label11.Location = new System.Drawing.Point(363, -3);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(273, 23);
             this.label11.TabIndex = 133;
@@ -77,7 +74,7 @@
             this.BtnExpo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExpo.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExpo.ForeColor = System.Drawing.Color.Silver;
-            this.BtnExpo.Location = new System.Drawing.Point(512, 705);
+            this.BtnExpo.Location = new System.Drawing.Point(403, 433);
             this.BtnExpo.Name = "BtnExpo";
             this.BtnExpo.Size = new System.Drawing.Size(124, 36);
             this.BtnExpo.TabIndex = 132;
@@ -107,7 +104,7 @@
             this.dgvDepartamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDepartamentos.EnableHeadersVisualStyles = false;
             this.dgvDepartamentos.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvDepartamentos.Location = new System.Drawing.Point(512, 60);
+            this.dgvDepartamentos.Location = new System.Drawing.Point(379, 60);
             this.dgvDepartamentos.MultiSelect = false;
             this.dgvDepartamentos.Name = "dgvDepartamentos";
             this.dgvDepartamentos.ReadOnly = true;
@@ -122,13 +119,13 @@
             this.dgvDepartamentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDepartamentos.RowHeadersVisible = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgvDepartamentos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDepartamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDepartamentos.Size = new System.Drawing.Size(1186, 639);
+            this.dgvDepartamentos.Size = new System.Drawing.Size(420, 367);
             this.dgvDepartamentos.TabIndex = 126;
             this.dgvDepartamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDepartamentos_CellClick);
             // 
@@ -137,7 +134,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(806, 27);
+            this.label9.Location = new System.Drawing.Point(187, 15);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 30);
             this.label9.TabIndex = 125;
@@ -148,7 +145,7 @@
             this.Txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.Txtbuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtbuscar.ForeColor = System.Drawing.Color.White;
-            this.Txtbuscar.Location = new System.Drawing.Point(935, 35);
+            this.Txtbuscar.Location = new System.Drawing.Point(311, 20);
             this.Txtbuscar.Name = "Txtbuscar";
             this.Txtbuscar.Size = new System.Drawing.Size(450, 26);
             this.Txtbuscar.TabIndex = 124;
@@ -161,7 +158,7 @@
             this.txtDescripcion.ForeColor = System.Drawing.Color.White;
             this.txtDescripcion.Location = new System.Drawing.Point(171, 96);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(341, 26);
+            this.txtDescripcion.Size = new System.Drawing.Size(178, 26);
             this.txtDescripcion.TabIndex = 120;
             // 
             // txtNombre
@@ -171,7 +168,7 @@
             this.txtNombre.ForeColor = System.Drawing.Color.White;
             this.txtNombre.Location = new System.Drawing.Point(171, 60);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(341, 26);
+            this.txtNombre.Size = new System.Drawing.Size(178, 26);
             this.txtNombre.TabIndex = 119;
             // 
             // label3
@@ -200,9 +197,9 @@
             // 
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.Image = global::emvecre.Properties.Resources.Modificar;
-            this.btnModificar.Location = new System.Drawing.Point(1403, 747);
+            this.btnModificar.Location = new System.Drawing.Point(265, 151);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(132, 99);
+            this.btnModificar.Size = new System.Drawing.Size(75, 68);
             this.btnModificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnModificar.TabIndex = 112;
             this.btnModificar.TabStop = false;
@@ -214,9 +211,9 @@
             // 
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Image = global::emvecre.Properties.Resources.Eliminar;
-            this.btnEliminar.Location = new System.Drawing.Point(1196, 747);
+            this.btnEliminar.Location = new System.Drawing.Point(145, 151);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(132, 99);
+            this.btnEliminar.Size = new System.Drawing.Size(75, 68);
             this.btnEliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnEliminar.TabIndex = 111;
             this.btnEliminar.TabStop = false;
@@ -228,9 +225,9 @@
             // 
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.Image = global::emvecre.Properties.Resources.Guardar;
-            this.btnGuardar.Location = new System.Drawing.Point(959, 747);
+            this.btnGuardar.Location = new System.Drawing.Point(17, 151);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(132, 99);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 68);
             this.btnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnGuardar.TabIndex = 110;
             this.btnGuardar.TabStop = false;
@@ -242,9 +239,9 @@
             // 
             this.btnCacelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCacelar.Image = global::emvecre.Properties.Resources.Cancelar;
-            this.btnCacelar.Location = new System.Drawing.Point(726, 747);
+            this.btnCacelar.Location = new System.Drawing.Point(145, 258);
             this.btnCacelar.Name = "btnCacelar";
-            this.btnCacelar.Size = new System.Drawing.Size(132, 99);
+            this.btnCacelar.Size = new System.Drawing.Size(75, 68);
             this.btnCacelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCacelar.TabIndex = 109;
             this.btnCacelar.TabStop = false;
@@ -252,27 +249,13 @@
             this.btnCacelar.MouseEnter += new System.EventHandler(this.btnCacelar_MouseEnter);
             this.btnCacelar.MouseLeave += new System.EventHandler(this.btnCacelar_MouseLeave);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalir.Image = global::emvecre.Properties.Resources.Regresar;
-            this.btnSalir.Location = new System.Drawing.Point(512, 747);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(132, 99);
-            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSalir.TabIndex = 108;
-            this.btnSalir.TabStop = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            this.btnSalir.MouseEnter += new System.EventHandler(this.btnSalir_MouseEnter);
-            this.btnSalir.MouseLeave += new System.EventHandler(this.btnSalir_MouseLeave);
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label15.Location = new System.Drawing.Point(1406, 849);
+            this.label15.Location = new System.Drawing.Point(235, 222);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(138, 33);
             this.label15.TabIndex = 138;
@@ -284,7 +267,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label14.Location = new System.Drawing.Point(1205, 849);
+            this.label14.Location = new System.Drawing.Point(119, 222);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(123, 33);
             this.label14.TabIndex = 137;
@@ -296,7 +279,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label13.Location = new System.Drawing.Point(969, 849);
+            this.label13.Location = new System.Drawing.Point(-4, 222);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(122, 33);
             this.label13.TabIndex = 136;
@@ -308,35 +291,22 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label12.Location = new System.Drawing.Point(725, 849);
+            this.label12.Location = new System.Drawing.Point(119, 329);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 33);
             this.label12.TabIndex = 135;
             this.label12.Text = "Cancelar";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label1.Location = new System.Drawing.Point(537, 849);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 33);
-            this.label1.TabIndex = 134;
-            this.label1.Text = "Salir";
             // 
             // frmDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1705, 907);
+            this.ClientSize = new System.Drawing.Size(800, 556);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BtnExpo);
             this.Controls.Add(this.dgvDepartamentos);
@@ -350,7 +320,6 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCacelar);
-            this.Controls.Add(this.btnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDepartamentos";
             this.Text = "frmDepartamentos";
@@ -360,7 +329,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnEliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCacelar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,11 +349,9 @@
         private System.Windows.Forms.PictureBox btnEliminar;
         private System.Windows.Forms.PictureBox btnGuardar;
         private System.Windows.Forms.PictureBox btnCacelar;
-        private System.Windows.Forms.PictureBox btnSalir;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label1;
     }
 }

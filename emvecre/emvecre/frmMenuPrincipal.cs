@@ -15,58 +15,11 @@ namespace emvecre
         {
             InitializeComponent();
            
-            //conexion a la base de datos
-            ConexSQL.conectar();
-
-            //crea las tablas en la base de datos en caso de que no existan
-
-            crearTablas.crear_tabla_articulos(); //creacion de la tabla Articulos
-            crearTablas.crear_tabla_clientes(); //creacion de la tabla Clientes
-            crearTablas.crear_tabla_departamentos(); //creacion de la tabla Departamento
-            crearTablas.crear_tabla_detalle_compra(); //creacion de la tabla detalle_Compras
-            crearTablas.crear_tabla_compra(); //creacion de la tabla Compra
-            crearTablas.crear_tabla_proveedor(); //creacion de la tabla Proveedor
-            crearTablas.crear_tabla_vendedor(); //creacion de la tabla Vendedor
-            crearTablas.crear_tabla_ventas(); //creacion de la tabla Ventas
-            crearTablas.crear_tabla_detalle_ventas(); //creacion de la tabla Detalle ventas
-            crearTablas.crearusuarios(); //creacion de la tabla usuarios                              
-            crearTablas.crear_tabla_cierre_caja(); //Creacion de la tabla cierre de caja
-            iniciarProyecto();
+           
+            
         }
 
-        public void iniciarProyecto()
-        {
-            ConexTablas ct = new ConexTablas();
-            DateTime dateTime = DateTime.Now;
-            string sql = "select * from clientes";
-            SqlDataReader miDr;
-            miDr = ConexSQL.consultarInformacionSinParm(sql);
-            if (miDr.HasRows==false)
-            {
-                ct.guardarCliente("CLIENTE CONTADO",dateTime,"000000000","","","");
-                sql = "";
-                miDr.Dispose();
-            }
-            sql = "select * from vendedor";
-            miDr = ConexSQL.consultarInformacionSinParm(sql);
-            if(miDr.HasRows==false)
-            {
-                ct.guardarVend("SISTEMA");
-                sql = "";
-                miDr.Dispose();
-            }
-            sql = "select * from departamento";
-            miDr = ConexSQL.consultarInformacionSinParm(sql);
-            if (miDr.HasRows == false)
-            {
-                ct.guardarDep("GENERAL","Departamento general de articulos");
-                sql = "";
-                miDr.Dispose();
-            }
-        }
-
-
-
+   
 
         //Metodo para abrir formularios en el panel
         private void abrirFormulario<miform>() where miform : Form, new()
@@ -127,7 +80,10 @@ namespace emvecre
         //abre el formulario de menu de facturacion
         private void btnFacturar_Click(object sender, EventArgs e)
         {
+            
+            
             abrirFormulario<frmMenuFacturacion>();
+            
 
         }
 

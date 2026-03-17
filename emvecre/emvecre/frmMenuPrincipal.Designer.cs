@@ -67,9 +67,9 @@
             // panelOperaciones
             // 
             this.panelOperaciones.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelOperaciones.Location = new System.Drawing.Point(199, 40);
+            this.panelOperaciones.Location = new System.Drawing.Point(214, 40);
             this.panelOperaciones.Name = "panelOperaciones";
-            this.panelOperaciones.Size = new System.Drawing.Size(1719, 1059);
+            this.panelOperaciones.Size = new System.Drawing.Size(806, 706);
             this.panelOperaciones.TabIndex = 11;
             // 
             // PanelPrincipal
@@ -96,7 +96,7 @@
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(199, 1082);
+            this.PanelPrincipal.Size = new System.Drawing.Size(217, 750);
             this.PanelPrincipal.TabIndex = 13;
             // 
             // btnVentas
@@ -104,9 +104,9 @@
             this.btnVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVentas.ErrorImage = null;
             this.btnVentas.Image = global::emvecre.Properties.Resources.Report_Ventas;
-            this.btnVentas.Location = new System.Drawing.Point(3, 803);
+            this.btnVentas.Location = new System.Drawing.Point(3, 478);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(193, 99);
+            this.btnVentas.Size = new System.Drawing.Size(47, 43);
             this.btnVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnVentas.TabIndex = 13;
             this.btnVentas.TabStop = false;
@@ -120,11 +120,11 @@
             this.lblRepCompras.BackColor = System.Drawing.Color.Transparent;
             this.lblRepCompras.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepCompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblRepCompras.Location = new System.Drawing.Point(45, 1046);
+            this.lblRepCompras.Location = new System.Drawing.Point(3, 611);
             this.lblRepCompras.Name = "lblRepCompras";
-            this.lblRepCompras.Size = new System.Drawing.Size(105, 27);
+            this.lblRepCompras.Size = new System.Drawing.Size(195, 27);
             this.lblRepCompras.TabIndex = 21;
-            this.lblRepCompras.Text = "Compras";
+            this.lblRepCompras.Text = "Reporte Compras";
             // 
             // lblVendedor
             // 
@@ -132,7 +132,7 @@
             this.lblVendedor.BackColor = System.Drawing.Color.Transparent;
             this.lblVendedor.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblVendedor.Location = new System.Drawing.Point(45, 773);
+            this.lblVendedor.Location = new System.Drawing.Point(55, 390);
             this.lblVendedor.Name = "lblVendedor";
             this.lblVendedor.Size = new System.Drawing.Size(112, 27);
             this.lblVendedor.TabIndex = 19;
@@ -144,7 +144,7 @@
             this.lblRepVentas.BackColor = System.Drawing.Color.Transparent;
             this.lblRepVentas.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblRepVentas.Location = new System.Drawing.Point(18, 905);
+            this.lblRepVentas.Location = new System.Drawing.Point(3, 524);
             this.lblRepVentas.Name = "lblRepVentas";
             this.lblRepVentas.Size = new System.Drawing.Size(175, 27);
             this.lblRepVentas.TabIndex = 20;
@@ -156,7 +156,7 @@
             this.lblProveedor.BackColor = System.Drawing.Color.Transparent;
             this.lblProveedor.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblProveedor.Location = new System.Drawing.Point(45, 641);
+            this.lblProveedor.Location = new System.Drawing.Point(55, 313);
             this.lblProveedor.Name = "lblProveedor";
             this.lblProveedor.Size = new System.Drawing.Size(118, 27);
             this.lblProveedor.TabIndex = 18;
@@ -168,7 +168,7 @@
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblCliente.Location = new System.Drawing.Point(52, 498);
+            this.lblCliente.Location = new System.Drawing.Point(55, 240);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(98, 27);
             this.lblCliente.TabIndex = 17;
@@ -180,7 +180,7 @@
             this.lblInventario.BackColor = System.Drawing.Color.Transparent;
             this.lblInventario.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblInventario.Location = new System.Drawing.Point(45, 366);
+            this.lblInventario.Location = new System.Drawing.Point(55, 165);
             this.lblInventario.Name = "lblInventario";
             this.lblInventario.Size = new System.Drawing.Size(117, 27);
             this.lblInventario.TabIndex = 16;
@@ -192,7 +192,7 @@
             this.lblCompras.BackColor = System.Drawing.Color.Transparent;
             this.lblCompras.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblCompras.Location = new System.Drawing.Point(49, 234);
+            this.lblCompras.Location = new System.Drawing.Point(55, 91);
             this.lblCompras.Name = "lblCompras";
             this.lblCompras.Size = new System.Drawing.Size(101, 27);
             this.lblCompras.TabIndex = 15;
@@ -204,7 +204,7 @@
             this.lblFacturar.BackColor = System.Drawing.Color.Transparent;
             this.lblFacturar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFacturar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblFacturar.Location = new System.Drawing.Point(46, 105);
+            this.lblFacturar.Location = new System.Drawing.Point(55, 19);
             this.lblFacturar.Name = "lblFacturar";
             this.lblFacturar.Size = new System.Drawing.Size(101, 27);
             this.lblFacturar.TabIndex = 14;
@@ -215,9 +215,9 @@
             this.btnRepCompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRepCompras.ErrorImage = null;
             this.btnRepCompras.Image = global::emvecre.Properties.Resources.Reporte_Compras;
-            this.btnRepCompras.Location = new System.Drawing.Point(3, 944);
+            this.btnRepCompras.Location = new System.Drawing.Point(3, 565);
             this.btnRepCompras.Name = "btnRepCompras";
-            this.btnRepCompras.Size = new System.Drawing.Size(193, 99);
+            this.btnRepCompras.Size = new System.Drawing.Size(47, 43);
             this.btnRepCompras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnRepCompras.TabIndex = 14;
             this.btnRepCompras.TabStop = false;
@@ -230,9 +230,9 @@
             this.btnVendedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVendedores.ErrorImage = null;
             this.btnVendedores.Image = global::emvecre.Properties.Resources.Vendedores;
-            this.btnVendedores.Location = new System.Drawing.Point(3, 671);
+            this.btnVendedores.Location = new System.Drawing.Point(3, 374);
             this.btnVendedores.Name = "btnVendedores";
-            this.btnVendedores.Size = new System.Drawing.Size(193, 99);
+            this.btnVendedores.Size = new System.Drawing.Size(47, 43);
             this.btnVendedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnVendedores.TabIndex = 11;
             this.btnVendedores.TabStop = false;
@@ -245,9 +245,9 @@
             this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProveedores.ErrorImage = null;
             this.btnProveedores.Image = global::emvecre.Properties.Resources.Proveedores;
-            this.btnProveedores.Location = new System.Drawing.Point(3, 539);
+            this.btnProveedores.Location = new System.Drawing.Point(3, 297);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(193, 99);
+            this.btnProveedores.Size = new System.Drawing.Size(47, 43);
             this.btnProveedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnProveedores.TabIndex = 10;
             this.btnProveedores.TabStop = false;
@@ -260,9 +260,9 @@
             this.btnCompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCompras.ErrorImage = null;
             this.btnCompras.Image = global::emvecre.Properties.Resources.Compras;
-            this.btnCompras.Location = new System.Drawing.Point(3, 135);
+            this.btnCompras.Location = new System.Drawing.Point(3, 75);
             this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(193, 99);
+            this.btnCompras.Size = new System.Drawing.Size(47, 43);
             this.btnCompras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCompras.TabIndex = 7;
             this.btnCompras.TabStop = false;
@@ -275,9 +275,9 @@
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClientes.ErrorImage = null;
             this.btnClientes.Image = global::emvecre.Properties.Resources.Clientes;
-            this.btnClientes.Location = new System.Drawing.Point(3, 396);
+            this.btnClientes.Location = new System.Drawing.Point(3, 224);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(193, 99);
+            this.btnClientes.Size = new System.Drawing.Size(47, 43);
             this.btnClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnClientes.TabIndex = 9;
             this.btnClientes.TabStop = false;
@@ -292,7 +292,7 @@
             this.btnFacturar.Image = global::emvecre.Properties.Resources.Factu;
             this.btnFacturar.Location = new System.Drawing.Point(3, 3);
             this.btnFacturar.Name = "btnFacturar";
-            this.btnFacturar.Size = new System.Drawing.Size(193, 99);
+            this.btnFacturar.Size = new System.Drawing.Size(47, 43);
             this.btnFacturar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnFacturar.TabIndex = 4;
             this.btnFacturar.TabStop = false;
@@ -305,9 +305,9 @@
             this.btnInventario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInventario.ErrorImage = null;
             this.btnInventario.Image = global::emvecre.Properties.Resources.Inventario;
-            this.btnInventario.Location = new System.Drawing.Point(3, 264);
+            this.btnInventario.Location = new System.Drawing.Point(3, 149);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(193, 99);
+            this.btnInventario.Size = new System.Drawing.Size(47, 43);
             this.btnInventario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnInventario.TabIndex = 8;
             this.btnInventario.TabStop = false;
@@ -319,7 +319,7 @@
             // 
             this.btnMInimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMInimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMInimizar.Image")));
-            this.btnMInimizar.Location = new System.Drawing.Point(1801, 3);
+            this.btnMInimizar.Location = new System.Drawing.Point(908, 4);
             this.btnMInimizar.Name = "btnMInimizar";
             this.btnMInimizar.Size = new System.Drawing.Size(53, 22);
             this.btnMInimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -333,7 +333,7 @@
             // 
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(1860, 3);
+            this.btnClose.Location = new System.Drawing.Point(967, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(53, 22);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -363,15 +363,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1918, 1082);
+            this.ClientSize = new System.Drawing.Size(1024, 750);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.panelOperaciones);
             this.Controls.Add(this.btnMInimizar);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnUsuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenuPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmMenuPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PanelPrincipal.ResumeLayout(false);

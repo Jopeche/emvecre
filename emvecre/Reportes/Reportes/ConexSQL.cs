@@ -13,6 +13,7 @@ namespace Reportes
     public class ConexSQL
     {
         //variables para la conexion a la base de datos
+
         public static String servidorSQL = "LOCALHOST";
         public static String baseDatos = "PUNTO_VENTAS";
         public static String usuario = "sa";

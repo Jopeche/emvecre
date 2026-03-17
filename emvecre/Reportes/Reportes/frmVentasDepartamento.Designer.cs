@@ -49,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label1.Location = new System.Drawing.Point(524, 9);
+            this.label1.Location = new System.Drawing.Point(105, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(361, 30);
             this.label1.TabIndex = 18;
@@ -71,21 +71,21 @@
             this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVentas.Enabled = false;
-            this.dgvVentas.Location = new System.Drawing.Point(0, 222);
+            this.dgvVentas.Location = new System.Drawing.Point(2, 205);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.RowHeadersVisible = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvVentas.Size = new System.Drawing.Size(1516, 551);
+            this.dgvVentas.Size = new System.Drawing.Size(620, 252);
             this.dgvVentas.TabIndex = 16;
             // 
             // cmbDepartamentos
             // 
             this.cmbDepartamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDepartamentos.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartamentos.Location = new System.Drawing.Point(317, 161);
+            this.cmbDepartamentos.Location = new System.Drawing.Point(247, 156);
             this.cmbDepartamentos.Name = "cmbDepartamentos";
             this.cmbDepartamentos.Size = new System.Drawing.Size(209, 38);
             this.cmbDepartamentos.TabIndex = 19;
@@ -106,7 +106,7 @@
             // 
             this.dtpHasta.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpHasta.Location = new System.Drawing.Point(317, 109);
+            this.dtpHasta.Location = new System.Drawing.Point(247, 104);
             this.dtpHasta.Name = "dtpHasta";
             this.dtpHasta.Size = new System.Drawing.Size(209, 37);
             this.dtpHasta.TabIndex = 24;
@@ -138,7 +138,7 @@
             // 
             this.dtpDesde.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDesde.Location = new System.Drawing.Point(317, 66);
+            this.dtpDesde.Location = new System.Drawing.Point(247, 61);
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(209, 37);
             this.dtpDesde.TabIndex = 21;
@@ -152,7 +152,7 @@
             this.BtnExpo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExpo.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExpo.ForeColor = System.Drawing.Color.Silver;
-            this.BtnExpo.Location = new System.Drawing.Point(0, 779);
+            this.BtnExpo.Location = new System.Drawing.Point(498, 163);
             this.BtnExpo.Name = "BtnExpo";
             this.BtnExpo.Size = new System.Drawing.Size(124, 36);
             this.BtnExpo.TabIndex = 134;
@@ -165,7 +165,7 @@
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::Reportes.Properties.Resources.Salir;
-            this.btnSalir.Location = new System.Drawing.Point(1493, -1);
+            this.btnSalir.Location = new System.Drawing.Point(599, -1);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(23, 21);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +178,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1517, 1056);
+            this.ClientSize = new System.Drawing.Size(624, 702);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.BtnExpo);
             this.Controls.Add(this.dtpHasta);

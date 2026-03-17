@@ -1627,6 +1627,7 @@ namespace emvecre
             {
                 objMiconexion.ejecutarSentencia(sql, misParametros);
                 MessageBox.Show("CIERRE COMPLETADO CORRECTAMENTE", "ACEPTAR");
+               
             }
 
             

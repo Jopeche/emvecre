@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCierreCaja = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,9 +52,9 @@
             this.panelOperaciones.BackColor = System.Drawing.Color.SteelBlue;
             this.panelOperaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelOperaciones.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelOperaciones.Location = new System.Drawing.Point(203, 0);
+            this.panelOperaciones.Location = new System.Drawing.Point(139, 0);
             this.panelOperaciones.Name = "panelOperaciones";
-            this.panelOperaciones.Size = new System.Drawing.Size(1547, 1022);
+            this.panelOperaciones.Size = new System.Drawing.Size(665, 699);
             this.panelOperaciones.TabIndex = 3;
             this.panelOperaciones.Paint += new System.Windows.Forms.PaintEventHandler(this.panelOperaciones_Paint);
             // 
@@ -65,7 +64,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label1.Location = new System.Drawing.Point(55, 127);
+            this.label1.Location = new System.Drawing.Point(14, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 27);
             this.label1.TabIndex = 15;
@@ -77,7 +76,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label2.Location = new System.Drawing.Point(55, 311);
+            this.label2.Location = new System.Drawing.Point(14, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 27);
             this.label2.TabIndex = 16;
@@ -89,23 +88,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label3.Location = new System.Drawing.Point(38, 492);
+            this.label3.Location = new System.Drawing.Point(3, 251);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 27);
             this.label3.TabIndex = 17;
             this.label3.Text = "Devolucion";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label4.Location = new System.Drawing.Point(71, 995);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 27);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Salir";
             // 
             // panel1
             // 
@@ -113,7 +100,6 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCierreCaja);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -124,7 +110,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 1027);
+            this.panel1.Size = new System.Drawing.Size(135, 706);
             this.panel1.TabIndex = 0;
             // 
             // btnCierreCaja
@@ -132,9 +118,9 @@
             this.btnCierreCaja.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCierreCaja.ErrorImage = null;
             this.btnCierreCaja.Image = global::emvecre.Properties.Resources.CierreCaja;
-            this.btnCierreCaja.Location = new System.Drawing.Point(3, 569);
+            this.btnCierreCaja.Location = new System.Drawing.Point(33, 333);
             this.btnCierreCaja.Name = "btnCierreCaja";
-            this.btnCierreCaja.Size = new System.Drawing.Size(198, 121);
+            this.btnCierreCaja.Size = new System.Drawing.Size(69, 44);
             this.btnCierreCaja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCierreCaja.TabIndex = 20;
             this.btnCierreCaja.TabStop = false;
@@ -148,20 +134,20 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label5.Location = new System.Drawing.Point(23, 693);
+            this.label5.Location = new System.Drawing.Point(3, 380);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 27);
+            this.label5.Size = new System.Drawing.Size(129, 27);
             this.label5.TabIndex = 19;
-            this.label5.Text = "Cierre De Caja";
+            this.label5.Text = "Cierre Caja";
             // 
             // btnSalir
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.ErrorImage = null;
             this.btnSalir.Image = global::emvecre.Properties.Resources.Regresar;
-            this.btnSalir.Location = new System.Drawing.Point(-1, 871);
+            this.btnSalir.Location = new System.Drawing.Point(33, 510);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(198, 121);
+            this.btnSalir.Size = new System.Drawing.Size(69, 44);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSalir.TabIndex = 7;
             this.btnSalir.TabStop = false;
@@ -174,9 +160,9 @@
             this.btnDevolucion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDevolucion.ErrorImage = null;
             this.btnDevolucion.Image = global::emvecre.Properties.Resources.Devolucion;
-            this.btnDevolucion.Location = new System.Drawing.Point(3, 368);
+            this.btnDevolucion.Location = new System.Drawing.Point(33, 204);
             this.btnDevolucion.Name = "btnDevolucion";
-            this.btnDevolucion.Size = new System.Drawing.Size(198, 121);
+            this.btnDevolucion.Size = new System.Drawing.Size(69, 44);
             this.btnDevolucion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnDevolucion.TabIndex = 5;
             this.btnDevolucion.TabStop = false;
@@ -189,9 +175,9 @@
             this.btnReimprimir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReimprimir.ErrorImage = null;
             this.btnReimprimir.Image = global::emvecre.Properties.Resources.Reimprimir;
-            this.btnReimprimir.Location = new System.Drawing.Point(3, 187);
+            this.btnReimprimir.Location = new System.Drawing.Point(33, 96);
             this.btnReimprimir.Name = "btnReimprimir";
-            this.btnReimprimir.Size = new System.Drawing.Size(198, 121);
+            this.btnReimprimir.Size = new System.Drawing.Size(69, 44);
             this.btnReimprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnReimprimir.TabIndex = 4;
             this.btnReimprimir.TabStop = false;
@@ -204,9 +190,9 @@
             this.btnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFacturar.ErrorImage = null;
             this.btnFacturar.Image = global::emvecre.Properties.Resources.Facturar;
-            this.btnFacturar.Location = new System.Drawing.Point(3, 3);
+            this.btnFacturar.Location = new System.Drawing.Point(33, 3);
             this.btnFacturar.Name = "btnFacturar";
-            this.btnFacturar.Size = new System.Drawing.Size(198, 121);
+            this.btnFacturar.Size = new System.Drawing.Size(69, 44);
             this.btnFacturar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnFacturar.TabIndex = 3;
             this.btnFacturar.TabStop = false;
@@ -219,7 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1750, 1027);
+            this.ClientSize = new System.Drawing.Size(806, 706);
             this.Controls.Add(this.panelOperaciones);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -245,7 +231,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnCierreCaja;

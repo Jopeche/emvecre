@@ -13,6 +13,22 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Emvecre\Instalador Emvecre\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,6 +52,21 @@
   <PropertyGroup>
     <StartupObject>
     </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IconoEmvecre.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>430278381751FD42A35D72C222D4462E0D1B5264</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>emvecre_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -233,6 +264,19 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Content Include="..\Reportes\Reportes\bin\Release\Reportes.exe">
+      <Link>Reportes.exe</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Reportes.exe.config">
+      <Link>Reportes.exe.config</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Reportes.exe.manifest">
+      <Link>Reportes.exe.manifest</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Reportes.application">
+      <Link>Reportes.application</Link>
+    </Content>
+    <Content Include="emvecre_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -252,70 +296,70 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cancelar.png" />
+    <Content Include="Resources\Cancelar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Aceptar.png" />
+    <Content Include="Resources\Aceptar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Buscar.png" />
+    <Content Include="Resources\Buscar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Clientes.png" />
+    <Content Include="Resources\Clientes.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Compras.png" />
+    <Content Include="Resources\Compras.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Devolucion.png" />
+    <Content Include="Resources\Devolucion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\equis1.png" />
+    <Content Include="Resources\equis1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Factu.png" />
+    <Content Include="Resources\Factu.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Facturar.png" />
+    <Content Include="Resources\Facturar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Inventario.png" />
+    <Content Include="Resources\Inventario.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logo Emvecre.png" />
+    <Content Include="Resources\Logo Emvecre.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Minimizar.png" />
+    <Content Include="Resources\Minimizar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Procesar.png" />
+    <Content Include="Resources\Procesar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Proveedores.png" />
+    <Content Include="Resources\Proveedores.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Regresar.png" />
+    <Content Include="Resources\Regresar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Reimprimir.png" />
+    <Content Include="Resources\Reimprimir.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Report Ventas.png" />
+    <Content Include="Resources\Report Ventas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Guardar.png" />
+    <Content Include="Resources\Guardar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Eliminar.png" />
+    <Content Include="Resources\Eliminar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Modificar.png" />
+    <Content Include="Resources\Modificar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Productos.png" />
+    <Content Include="Resources\Productos.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Departamentos.png" />
+    <Content Include="Resources\Departamentos.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
@@ -347,10 +391,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Vendedores.png" />
+    <Content Include="Resources\Vendedores.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Usuarios.png" />
+    <Content Include="Resources\Usuarios.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reportes\Reportes\Reportes.csproj">
@@ -359,19 +403,58 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Reporte Compras.png" />
+    <Content Include="Resources\Reporte Compras.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Salir.png" />
+    <Content Include="Resources\Salir.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CierreCaja1.png" />
+    <Content Include="Resources\CierreCaja1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Reportes\Reportes\bin\Release\EnvDTE.dll">
+      <Link>EnvDTE.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Microsoft.ReportViewer.Common.dll">
+      <Link>Microsoft.ReportViewer.Common.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Microsoft.ReportViewer.DataVisualization.dll">
+      <Link>Microsoft.ReportViewer.DataVisualization.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Microsoft.ReportViewer.Design.dll">
+      <Link>Microsoft.ReportViewer.Design.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <Link>Microsoft.ReportViewer.ProcessingObjectModel.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Microsoft.ReportViewer.WinForms.dll">
+      <Link>Microsoft.ReportViewer.WinForms.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\Microsoft.SqlServer.Types.dll">
+      <Link>Microsoft.SqlServer.Types.dll</Link>
+    </Content>
+    <Content Include="..\Reportes\Reportes\bin\Release\stdole.dll">
+      <Link>stdole.dll</Link>
+    </Content>
+    <Content Include="IconoEmvecre.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

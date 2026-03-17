@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblClientes = new System.Windows.Forms.Label();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.txtVendedor = new System.Windows.Forms.TextBox();
@@ -71,7 +71,7 @@
             this.lblClientes.AutoSize = true;
             this.lblClientes.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClientes.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblClientes.Location = new System.Drawing.Point(17, 14);
+            this.lblClientes.Location = new System.Drawing.Point(5, 15);
             this.lblClientes.Name = "lblClientes";
             this.lblClientes.Size = new System.Drawing.Size(109, 33);
             this.lblClientes.TabIndex = 0;
@@ -80,20 +80,20 @@
             // txtCliente
             // 
             this.txtCliente.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCliente.Location = new System.Drawing.Point(158, 13);
+            this.txtCliente.Location = new System.Drawing.Point(145, 11);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.ReadOnly = true;
-            this.txtCliente.Size = new System.Drawing.Size(1004, 30);
+            this.txtCliente.Size = new System.Drawing.Size(214, 30);
             this.txtCliente.TabIndex = 1;
             this.txtCliente.Text = "CLIENTE CONTADO";
             // 
             // txtVendedor
             // 
             this.txtVendedor.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendedor.Location = new System.Drawing.Point(158, 66);
+            this.txtVendedor.Location = new System.Drawing.Point(145, 64);
             this.txtVendedor.Name = "txtVendedor";
             this.txtVendedor.ReadOnly = true;
-            this.txtVendedor.Size = new System.Drawing.Size(1004, 30);
+            this.txtVendedor.Size = new System.Drawing.Size(214, 30);
             this.txtVendedor.TabIndex = 3;
             this.txtVendedor.Text = "SISTEMA";
             // 
@@ -102,7 +102,7 @@
             this.lblVendedor.AutoSize = true;
             this.lblVendedor.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVendedor.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblVendedor.Location = new System.Drawing.Point(17, 66);
+            this.lblVendedor.Location = new System.Drawing.Point(5, 66);
             this.lblVendedor.Name = "lblVendedor";
             this.lblVendedor.Size = new System.Drawing.Size(140, 33);
             this.lblVendedor.TabIndex = 2;
@@ -114,7 +114,7 @@
             this.lblArticulo.AutoSize = true;
             this.lblArticulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArticulo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblArticulo.Location = new System.Drawing.Point(17, 124);
+            this.lblArticulo.Location = new System.Drawing.Point(5, 122);
             this.lblArticulo.Name = "lblArticulo";
             this.lblArticulo.Size = new System.Drawing.Size(121, 33);
             this.lblArticulo.TabIndex = 6;
@@ -123,18 +123,18 @@
             // txtArticulo
             // 
             this.txtArticulo.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticulo.Location = new System.Drawing.Point(154, 127);
+            this.txtArticulo.Location = new System.Drawing.Point(141, 125);
             this.txtArticulo.Name = "txtArticulo";
-            this.txtArticulo.Size = new System.Drawing.Size(357, 30);
+            this.txtArticulo.Size = new System.Drawing.Size(117, 30);
             this.txtArticulo.TabIndex = 7;
             this.txtArticulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtArticulo_KeyDown);
             // 
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(1053, 124);
+            this.txtCantidad.Location = new System.Drawing.Point(465, 125);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(156, 30);
+            this.txtCantidad.Size = new System.Drawing.Size(135, 30);
             this.txtCantidad.TabIndex = 10;
             this.txtCantidad.Text = "1";
             this.txtCantidad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCantidad_KeyDown);
@@ -146,7 +146,7 @@
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblCantidad.Location = new System.Drawing.Point(914, 124);
+            this.lblCantidad.Location = new System.Drawing.Point(326, 125);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(133, 33);
             this.lblCantidad.TabIndex = 9;
@@ -158,43 +158,43 @@
             this.dgvFactura.AllowUserToResizeColumns = false;
             this.dgvFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFactura.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFactura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFactura.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFactura.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFactura.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgvFactura.EnableHeadersVisualStyles = false;
-            this.dgvFactura.Location = new System.Drawing.Point(6, 219);
+            this.dgvFactura.Location = new System.Drawing.Point(2, 214);
             this.dgvFactura.Name = "dgvFactura";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFactura.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFactura.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvFactura.RowHeadersVisible = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Navy;
-            this.dgvFactura.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Navy;
+            this.dgvFactura.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvFactura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvFactura.Size = new System.Drawing.Size(1502, 579);
+            this.dgvFactura.Size = new System.Drawing.Size(662, 312);
             this.dgvFactura.TabIndex = 6;
             this.dgvFactura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellClick);
             this.dgvFactura.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellEndEdit);
@@ -209,9 +209,9 @@
             // 
             this.txtSubtotal.Enabled = false;
             this.txtSubtotal.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubtotal.Location = new System.Drawing.Point(5, 834);
+            this.txtSubtotal.Location = new System.Drawing.Point(16, 568);
             this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.Size = new System.Drawing.Size(299, 30);
+            this.txtSubtotal.Size = new System.Drawing.Size(162, 30);
             this.txtSubtotal.TabIndex = 13;
             this.txtSubtotal.Text = "0";
             this.txtSubtotal.TextChanged += new System.EventHandler(this.txtSubtotal_TextChanged);
@@ -221,7 +221,7 @@
             this.lblSubtotal.AutoSize = true;
             this.lblSubtotal.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtotal.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblSubtotal.Location = new System.Drawing.Point(11, 801);
+            this.lblSubtotal.Location = new System.Drawing.Point(22, 535);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(156, 33);
             this.lblSubtotal.TabIndex = 12;
@@ -231,9 +231,9 @@
             // 
             this.txtImpuesto.Enabled = false;
             this.txtImpuesto.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpuesto.Location = new System.Drawing.Point(616, 834);
+            this.txtImpuesto.Location = new System.Drawing.Point(203, 568);
             this.txtImpuesto.Name = "txtImpuesto";
-            this.txtImpuesto.Size = new System.Drawing.Size(301, 30);
+            this.txtImpuesto.Size = new System.Drawing.Size(185, 30);
             this.txtImpuesto.TabIndex = 17;
             this.txtImpuesto.Text = "0";
             this.txtImpuesto.TextChanged += new System.EventHandler(this.txtImpuesto_TextChanged);
@@ -243,7 +243,7 @@
             this.lblImpuesto.AutoSize = true;
             this.lblImpuesto.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImpuesto.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblImpuesto.Location = new System.Drawing.Point(622, 801);
+            this.lblImpuesto.Location = new System.Drawing.Point(209, 535);
             this.lblImpuesto.Name = "lblImpuesto";
             this.lblImpuesto.Size = new System.Drawing.Size(154, 33);
             this.lblImpuesto.TabIndex = 16;
@@ -253,9 +253,9 @@
             // 
             this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(1243, 834);
+            this.txtTotal.Location = new System.Drawing.Point(411, 568);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(292, 30);
+            this.txtTotal.Size = new System.Drawing.Size(203, 30);
             this.txtTotal.TabIndex = 19;
             this.txtTotal.Text = "0";
             this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
@@ -265,7 +265,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTotal.Location = new System.Drawing.Point(1249, 801);
+            this.lblTotal.Location = new System.Drawing.Point(417, 535);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(100, 33);
             this.lblTotal.TabIndex = 18;
@@ -277,9 +277,9 @@
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.ErrorImage = null;
             this.btnCancelar.Image = global::emvecre.Properties.Resources.Cancelar;
-            this.btnCancelar.Location = new System.Drawing.Point(654, 874);
+            this.btnCancelar.Location = new System.Drawing.Point(215, 618);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(198, 121);
+            this.btnCancelar.Size = new System.Drawing.Size(71, 48);
             this.btnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCancelar.TabIndex = 54;
             this.btnCancelar.TabStop = false;
@@ -293,9 +293,9 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.ErrorImage = null;
             this.btnSalir.Image = global::emvecre.Properties.Resources.Regresar;
-            this.btnSalir.Location = new System.Drawing.Point(46, 874);
+            this.btnSalir.Location = new System.Drawing.Point(36, 618);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(198, 121);
+            this.btnSalir.Size = new System.Drawing.Size(71, 48);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSalir.TabIndex = 53;
             this.btnSalir.TabStop = false;
@@ -309,9 +309,9 @@
             this.btnProcesar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProcesar.ErrorImage = null;
             this.btnProcesar.Image = global::emvecre.Properties.Resources.Procesar;
-            this.btnProcesar.Location = new System.Drawing.Point(1288, 874);
+            this.btnProcesar.Location = new System.Drawing.Point(411, 618);
             this.btnProcesar.Name = "btnProcesar";
-            this.btnProcesar.Size = new System.Drawing.Size(198, 121);
+            this.btnProcesar.Size = new System.Drawing.Size(71, 48);
             this.btnProcesar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnProcesar.TabIndex = 52;
             this.btnProcesar.TabStop = false;
@@ -324,7 +324,7 @@
             this.btnBuscarArticulo.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarArticulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarArticulo.Image = global::emvecre.Properties.Resources.Buscar;
-            this.btnBuscarArticulo.Location = new System.Drawing.Point(517, 127);
+            this.btnBuscarArticulo.Location = new System.Drawing.Point(264, 127);
             this.btnBuscarArticulo.Name = "btnBuscarArticulo";
             this.btnBuscarArticulo.Size = new System.Drawing.Size(40, 30);
             this.btnBuscarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -339,7 +339,7 @@
             this.btnBuscarVendedor.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarVendedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarVendedor.Image = global::emvecre.Properties.Resources.Buscar;
-            this.btnBuscarVendedor.Location = new System.Drawing.Point(1168, 66);
+            this.btnBuscarVendedor.Location = new System.Drawing.Point(365, 66);
             this.btnBuscarVendedor.Name = "btnBuscarVendedor";
             this.btnBuscarVendedor.Size = new System.Drawing.Size(41, 33);
             this.btnBuscarVendedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -354,7 +354,7 @@
             this.btnBuscarCliente.BackColor = System.Drawing.SystemColors.Window;
             this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCliente.Image = global::emvecre.Properties.Resources.Buscar;
-            this.btnBuscarCliente.Location = new System.Drawing.Point(1168, 13);
+            this.btnBuscarCliente.Location = new System.Drawing.Point(365, 14);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(41, 34);
             this.btnBuscarCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -370,7 +370,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(98, 998);
+            this.label4.Location = new System.Drawing.Point(39, 720);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 33);
             this.label4.TabIndex = 55;
@@ -382,7 +382,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(691, 998);
+            this.label1.Location = new System.Drawing.Point(204, 720);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 33);
             this.label1.TabIndex = 56;
@@ -394,7 +394,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(1327, 998);
+            this.label2.Location = new System.Drawing.Point(412, 720);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 33);
             this.label2.TabIndex = 57;
@@ -405,17 +405,18 @@
             this.lblNombreArticulo.AutoSize = true;
             this.lblNombreArticulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreArticulo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblNombreArticulo.Location = new System.Drawing.Point(148, 172);
+            this.lblNombreArticulo.Location = new System.Drawing.Point(6, 178);
             this.lblNombreArticulo.Name = "lblNombreArticulo";
-            this.lblNombreArticulo.Size = new System.Drawing.Size(0, 33);
+            this.lblNombreArticulo.Size = new System.Drawing.Size(172, 33);
             this.lblNombreArticulo.TabIndex = 60;
+            this.lblNombreArticulo.Text = "Descripcion";
             // 
             // frmFacturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1547, 1027);
+            this.ClientSize = new System.Drawing.Size(665, 699);
             this.Controls.Add(this.lblNombreArticulo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -443,7 +444,9 @@
             this.Controls.Add(this.lblClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFacturar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "frmFacturar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmFacturar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();

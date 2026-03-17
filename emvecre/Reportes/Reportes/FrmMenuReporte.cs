@@ -88,5 +88,9 @@ namespace Reportes
             btnCancelar.BackColor = Color.White;
         }
 
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

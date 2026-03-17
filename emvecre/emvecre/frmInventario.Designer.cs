@@ -41,9 +41,9 @@
             // 
             // PanelControlInventario
             // 
-            this.PanelControlInventario.Location = new System.Drawing.Point(2, 132);
+            this.PanelControlInventario.Location = new System.Drawing.Point(4, 144);
             this.PanelControlInventario.Name = "PanelControlInventario";
-            this.PanelControlInventario.Size = new System.Drawing.Size(1705, 892);
+            this.PanelControlInventario.Size = new System.Drawing.Size(800, 556);
             this.PanelControlInventario.TabIndex = 10;
             // 
             // label2
@@ -74,7 +74,7 @@
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::emvecre.Properties.Resources.Salir;
-            this.btnSalir.Location = new System.Drawing.Point(1694, 2);
+            this.btnSalir.Location = new System.Drawing.Point(781, 2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(23, 21);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1719, 961);
+            this.ClientSize = new System.Drawing.Size(806, 706);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
