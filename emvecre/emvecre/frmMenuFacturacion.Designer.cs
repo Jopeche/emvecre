@@ -33,6 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnCierreCaja = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.PictureBox();
@@ -40,6 +42,7 @@
             this.btnReimprimir = new System.Windows.Forms.PictureBox();
             this.btnFacturar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCierreCaja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDevolucion)).BeginInit();
@@ -88,7 +91,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label3.Location = new System.Drawing.Point(3, 251);
+            this.label3.Location = new System.Drawing.Point(3, 238);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 27);
             this.label3.TabIndex = 17;
@@ -98,6 +101,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnCierreCaja);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -113,12 +118,35 @@
             this.panel1.Size = new System.Drawing.Size(135, 706);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 330);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label4.Location = new System.Drawing.Point(28, 384);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 27);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Retirar";
+            // 
             // btnCierreCaja
             // 
             this.btnCierreCaja.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCierreCaja.ErrorImage = null;
             this.btnCierreCaja.Image = global::emvecre.Properties.Resources.CierreCaja;
-            this.btnCierreCaja.Location = new System.Drawing.Point(33, 333);
+            this.btnCierreCaja.Location = new System.Drawing.Point(33, 447);
             this.btnCierreCaja.Name = "btnCierreCaja";
             this.btnCierreCaja.Size = new System.Drawing.Size(69, 44);
             this.btnCierreCaja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +162,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label5.Location = new System.Drawing.Point(3, 380);
+            this.label5.Location = new System.Drawing.Point(3, 494);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 27);
             this.label5.TabIndex = 19;
@@ -145,7 +173,7 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.ErrorImage = null;
             this.btnSalir.Image = global::emvecre.Properties.Resources.Regresar;
-            this.btnSalir.Location = new System.Drawing.Point(33, 510);
+            this.btnSalir.Location = new System.Drawing.Point(33, 608);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(69, 44);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +188,7 @@
             this.btnDevolucion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDevolucion.ErrorImage = null;
             this.btnDevolucion.Image = global::emvecre.Properties.Resources.Devolucion;
-            this.btnDevolucion.Location = new System.Drawing.Point(33, 204);
+            this.btnDevolucion.Location = new System.Drawing.Point(33, 191);
             this.btnDevolucion.Name = "btnDevolucion";
             this.btnDevolucion.Size = new System.Drawing.Size(69, 44);
             this.btnDevolucion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -190,6 +218,7 @@
             this.btnFacturar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFacturar.ErrorImage = null;
             this.btnFacturar.Image = global::emvecre.Properties.Resources.Facturar;
+            this.btnFacturar.InitialImage = null;
             this.btnFacturar.Location = new System.Drawing.Point(33, 3);
             this.btnFacturar.Name = "btnFacturar";
             this.btnFacturar.Size = new System.Drawing.Size(69, 44);
@@ -213,6 +242,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCierreCaja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDevolucion)).EndInit();
@@ -234,6 +264,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnCierreCaja;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

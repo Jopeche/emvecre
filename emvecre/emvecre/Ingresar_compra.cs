@@ -30,7 +30,7 @@ namespace emvecre
         //carga los datos necesarios para agregar los articulos de compra al datagridview
         private void Ingresar_compra_Load(object sender, EventArgs e)
         {
-
+            txtArticulo.Focus();
             ct.llenarComboProveedores(cmbProveedores);
 
             dgvCompra.Columns.Add("Codigo", "Codigo");
@@ -43,7 +43,8 @@ namespace emvecre
             DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
             btnDelete.Name = " ";
             btnDelete.HeaderText = " ";
-
+            btnDelete.UseColumnTextForButtonValue = true;
+            btnDelete.CellTemplate.Style.BackColor = Color.Red;
             dgvCompra.Columns.Add(btnDelete);
 
             dgvCompra.Columns[0].ReadOnly = true;
@@ -56,9 +57,6 @@ namespace emvecre
             dgvCompra.Columns[4].DefaultCellStyle.Format = "N2";
             dgvCompra.Columns[5].ReadOnly = true;
             dgvCompra.Columns[5].DefaultCellStyle.Format = "N2";
-            dgvCompra.Columns[6].ReadOnly = true;
-
-
 
         }
  
@@ -182,21 +180,6 @@ namespace emvecre
            
         }
 
-        //no permite que el dato ingresado en la celda sea nulo o igual a cero
-        private void dgvCompra_Validated(object sender, EventArgs e)
-        {
-            try {
-            string p = dgvCompra.CurrentCell.EditedFormattedValue.ToString();
-            if (p == "")
-            {
-                dgvCompra.CurrentCell.Value = 1;
-
-            }
-            }
-            catch { }
-
-        }
-
         //al cambiar el valor de una celda calcula el valor de total, subtotal e impuesto
         private void dgvCompra_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
@@ -258,7 +241,7 @@ namespace emvecre
 
 
 
-                if (dgvCompra.CurrentRow.Cells[" "].Selected)
+                if (dgvCompra.CurrentRow.Cells[6].Selected)
                 {
                     resultado = MessageBox.Show("Desea eliminar la fila selecionada?", "ELIMINAR", MessageBoxButtons.YesNo);
                
@@ -297,10 +280,6 @@ namespace emvecre
             ct.calculoCompra(dgvCompra, txtSubtotal);
             txtImpuesto.Text = Convert.ToDecimal(ct.buscarGravados(dgvCompra)).ToString();
             txtTotal.Text = (Convert.ToDecimal(txtSubtotal.Text) + Convert.ToDecimal(txtImpuesto.Text)).ToString();
-        }
-
-        private void dgvCompra_RowsAdded_1(object sender, DataGridViewRowsAddedEventArgs e)
-        {
         }
 
         //metodo para verificar los datos ingresados e ingresar la compra al sistema
@@ -604,11 +583,6 @@ namespace emvecre
         private void dgvCompra_Click(object sender, EventArgs e)
         {
           
-        }
-
-        private void dgvCompra_Enter(object sender, EventArgs e)
-        {
-
         }
 
         //no permite que la cantidad ingresada en la celda sea de valor nulo

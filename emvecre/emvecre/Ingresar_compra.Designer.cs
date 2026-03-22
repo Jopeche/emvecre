@@ -167,7 +167,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCompra.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCompra.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dgvCompra.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dgvCompra.EnableHeadersVisualStyles = false;
             this.dgvCompra.Location = new System.Drawing.Point(1, 170);
             this.dgvCompra.MultiSelect = false;
@@ -191,17 +191,16 @@
             this.dgvCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvCompra.Size = new System.Drawing.Size(805, 336);
             this.dgvCompra.TabIndex = 41;
+            this.dgvCompra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompra_CellClick);
             this.dgvCompra.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompra_CellEndEdit);
             this.dgvCompra.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvCompra_CellPainting_1);
             this.dgvCompra.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompra_CellValidated);
             this.dgvCompra.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvCompra_EditingControlShowing);
-            this.dgvCompra.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvCompra_RowsAdded_1);
+            this.dgvCompra.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvCompra_RowsAdded);
             this.dgvCompra.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvCompra_RowsRemoved);
             this.dgvCompra.Click += new System.EventHandler(this.dgvCompra_Click);
-            this.dgvCompra.Enter += new System.EventHandler(this.dgvCompra_Enter);
             this.dgvCompra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvCompra_KeyDown_1);
             this.dgvCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgvCompra_KeyPress_1);
-            this.dgvCompra.Validated += new System.EventHandler(this.dgvCompra_Validated);
             // 
             // txtCantidad
             // 

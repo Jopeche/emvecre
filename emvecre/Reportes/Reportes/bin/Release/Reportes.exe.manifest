@@ -607,14 +607,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Reportes.exe" size="1540528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Reportes.exe" size="1542064">
       <assemblyIdentity name="Reportes" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hgAn4oCwCk2VXi3hYIEIqGMNlb8oCb9HGpve6SOwU6s=</dsig:DigestValue>
+        <dsig:DigestValue>zj8L7od2cqxvPJ9JBRv3kcYP7fgzBV1i0gbGoJ2koEQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

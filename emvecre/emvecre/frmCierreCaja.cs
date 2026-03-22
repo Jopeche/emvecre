@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,9 @@ namespace emvecre
 {
     public partial class frmCierreCaja : Form
     {
+        Cierre cr = new Cierre();
+        ConexTablas ct = new ConexTablas();
+
         public frmCierreCaja()
         {
             InitializeComponent();
@@ -19,16 +24,17 @@ namespace emvecre
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            ConexTablas ct = new ConexTablas();
-            Cierre cr = new Cierre();
-            DateTime fecha = DateTime.Now;
             
+           
+
+            DateTime fecha = DateTime.Now;
+
             decimal repEfectivo = decimal.Parse(txtEfectivo.Text);
             decimal repTarjeta = decimal.Parse(txtTarjeta.Text);
 
             if (repEfectivo != 0 && repTarjeta != 0)
             {
-                cr.Refresh();
+                
                 ct.cerrarCaja(fecha, repEfectivo, repTarjeta);
 
                 txtEfectivo.Text = "";
@@ -36,15 +42,13 @@ namespace emvecre
                 cr = ct.reporteCierreCaja();
                 cvCierreCaja.ReportSource = cr;
                 cvCierreCaja.Refresh();
-                cr.Dispose();
+            
 
             }
             else
             {
                 MessageBox.Show("DEBE COMLETAR LA INFORMACION","ACEPTAR");
-            }
-
-            
+            }  
 
         }
 
@@ -88,6 +92,42 @@ namespace emvecre
                 }
 
             }
+        }
+
+        private void btnGuardar_MouseEnter(object sender, EventArgs e)
+        {
+            btnGuardar.BackColor = Color.LightBlue;
+        }
+
+        private void btnGuardar_MouseLeave(object sender, EventArgs e)
+        {
+            btnGuardar.BackColor = Color.White;
+        }
+
+        private void btnCancelar_MouseEnter(object sender, EventArgs e)
+        {
+            btnCancelar.BackColor = Color.LightBlue;
+        }
+
+        private void btnCancelar_MouseLeave(object sender, EventArgs e)
+        {
+            btnCancelar.BackColor = Color.White;
+        }
+
+        private void txtEfectivo_Click(object sender, EventArgs e)
+        {
+            txtEfectivo.SelectAll();
+        }
+
+        private void txtTarjeta_Click(object sender, EventArgs e)
+        {
+            txtTarjeta.SelectAll();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DateTime fecha = DateTime.Today;
+            ct.eliminarCierre(fecha);
         }
     }
 }

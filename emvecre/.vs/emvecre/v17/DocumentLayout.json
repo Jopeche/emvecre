@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Emvecre\\emvecre\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99AD01C5-5239-4ADB-971B-22D9CAA20988}|emvecre\\emvecre.csproj|D:\\Emvecre\\emvecre\\emvecre\\frmmenufacturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{99AD01C5-5239-4ADB-971B-22D9CAA20988}|emvecre\\emvecre.csproj|solutionrelative:emvecre\\frmmenufacturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99AD01C5-5239-4ADB-971B-22D9CAA20988}|emvecre\\emvecre.csproj|D:\\Emvecre\\emvecre\\emvecre\\frmcierrecaja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99AD01C5-5239-4ADB-971B-22D9CAA20988}|emvecre\\emvecre.csproj|solutionrelative:emvecre\\frmcierrecaja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99AD01C5-5239-4ADB-971B-22D9CAA20988}|emvecre\\emvecre.csproj|D:\\Emvecre\\emvecre\\emvecre\\creartablas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99AD01C5-5239-4ADB-971B-22D9CAA20988}|emvecre\\emvecre.csproj|solutionrelative:emvecre\\creartablas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMenuFacturacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Emvecre\\emvecre\\emvecre\\frmMenuFacturacion.cs",
+              "RelativeDocumentMoniker": "emvecre\\frmMenuFacturacion.cs",
+              "ToolTip": "D:\\Emvecre\\emvecre\\emvecre\\frmMenuFacturacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "emvecre\\frmMenuFacturacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T04:10:43.615Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CrearTablas.cs",
+              "DocumentMoniker": "D:\\Emvecre\\emvecre\\emvecre\\CrearTablas.cs",
+              "RelativeDocumentMoniker": "emvecre\\CrearTablas.cs",
+              "ToolTip": "D:\\Emvecre\\emvecre\\emvecre\\CrearTablas.cs",
+              "RelativeToolTip": "emvecre\\CrearTablas.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAQwL0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T04:02:41.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCierreCaja.cs",
+              "DocumentMoniker": "D:\\Emvecre\\emvecre\\emvecre\\frmCierreCaja.cs",
+              "RelativeDocumentMoniker": "emvecre\\frmCierreCaja.cs",
+              "ToolTip": "D:\\Emvecre\\emvecre\\emvecre\\frmCierreCaja.cs",
+              "RelativeToolTip": "emvecre\\frmCierreCaja.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwIAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T03:32:13.634Z",
+              "EditorCaption": ""
             }
           ]
         }

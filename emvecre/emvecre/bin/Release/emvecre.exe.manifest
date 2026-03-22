@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="emvecre.exe" version="1.0.0.13" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="emvecre.exe" version="1.0.0.26" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="IconoEmvecre.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -235,26 +235,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="emvecre.exe" size="5904304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="emvecre.exe" size="5904816">
       <assemblyIdentity name="emvecre" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xhS73apSwoNkS/Nf97Rb8G5gDfWGCiXF67GyjKn57VE=</dsig:DigestValue>
+        <dsig:DigestValue>mTOo7LYWImF6g2L+CE3JLwZgDmOL8Lk3qtuYkgTflXk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Reportes.exe" size="1539584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Reportes.exe" size="1541120">
       <assemblyIdentity name="Reportes" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>c+kMaYp+TML8Wd50oIi9lS8PtZUU7rBEPnA6UK5cXRQ=</dsig:DigestValue>
+        <dsig:DigestValue>UExUYFS+2pQ1RqLcfBAdqlY5mTBrdhQE2c8EhUzwNC0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -270,13 +270,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="emvecre.exe.config" size="184">
+  <file name="emvecre.exe.config" size="226">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
+      <dsig:DigestValue>OeWx4aV4aYwNwlm9src+KNEzLjGcR2gGT+U1lj3wU4U=</dsig:DigestValue>
     </hash>
   </file>
   <file name="emvecre_TemporaryKey.pfx" size="1668">
@@ -366,7 +366,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bxsXBZNbSPjYuv9mLV4DBC+Ek3ItoqqCo7nSifJelcI=</dsig:DigestValue>
+      <dsig:DigestValue>nulofTHpsD07MuJ0evBDN4yaRyYJvsmCZJuxDMXIH1I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes.exe.config" size="161">
@@ -384,7 +384,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>PkqrEFk3M8GcyvTx/VXFw1ipTSLkJuEXpRbVE3UBBXw=</dsig:DigestValue>
+      <dsig:DigestValue>XlkZ77iAjSVYi3K3XAKy3T2iVTz4TKco2uBfK3fxsaA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Aceptar.png" size="140644">

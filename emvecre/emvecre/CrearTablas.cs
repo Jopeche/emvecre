@@ -162,10 +162,11 @@ namespace emvecre
 
         }
 
+        //crear tabla de cierre de caja
         public static string tablaCierreCaja = "CierreCaja";
 
         public const string Cad_Grid_cierre_caja = "idCierre,fecha,repEfectivo,repTarjeta";
-
+       
         public static void crear_tabla_cierre_caja()
         {
             ConexSQL objMiconexion = new ConexSQL();
@@ -173,5 +174,17 @@ namespace emvecre
                 "fecha date NOT NULL, repEfectivo money NOT NULL, repTarjeta money NOT NULL);";
             objMiconexion.ejecutarSentenciaSql(sql);
         }
-    }
+
+        //crear tabla retiros efectivo
+        public static string tablaRetiros = "Retiros";
+
+        public const string Cad_Grid_retiros = "idRetiro,fecha,monto,descripcion";
+        public static void crear_tabla_retiros()
+        {
+            ConexSQL objMiconexion = new ConexSQL();
+            String sql = "IF NOT EXISTS (select name from sysobjects where name ='" + tablaRetiros + "') CREATE TABLE " + tablaRetiros + "(idRetiro int IDENTITY(1,1) not null," +
+                "fecha date NOT NULL, monto money NOT NULL, descripcion nvarchar(256));";
+            objMiconexion.ejecutarSentenciaSql(sql);
+        }
+}
 }

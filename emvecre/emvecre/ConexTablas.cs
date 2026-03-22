@@ -93,6 +93,8 @@ namespace emvecre
 
         public static string tablaCierreCaja = "CierreCaja";
 
+        public static string tablaRetiros = "Retiros";
+
         //LLena un comboBox con los proveedores guandados en la tabla proveedores
         public void llenarComboProveedores(ComboBox Combo_Prov)
         {
@@ -462,7 +464,7 @@ namespace emvecre
         }
 
 
-        //metodo para buscar articulos en la base de datos por nombre y cargarlos en un data grid view
+        //metodo para buscar articulos en la base de datos por nombre y cargarlos in un data grid view
         public bool buscarArticulos(DataGridView datos, string nombre)
         {
             ConexSQL objMiconexion = new ConexSQL();
@@ -1118,7 +1120,7 @@ namespace emvecre
         
         }
 
-        ////metodo para actualizar un dato en la tabla articulos
+        ////metodo para actualizar un dato in la tabla articulos
         public void actualizarArticulo(string codigo1, string codigo2, string nombre, double existencia, int idDepartamento, double costo, double precio, string imp)
         {
 
@@ -1178,7 +1180,7 @@ namespace emvecre
 
             excel.Visible = true;
         }
-
+            
         ////metodo para mostrar los departamentos en un datagridview
         public void MostrarDepartamentos(DataGridView dtv)
         {
@@ -1601,6 +1603,7 @@ namespace emvecre
         {
             ConexSQL objMiconexion = new ConexSQL();
             SqlDataReader miDr = null;
+            DateTime fechaCorta = fecha.Date;
             
 
             SqlParameter[] misParametros = new SqlParameter[3];
@@ -1608,18 +1611,20 @@ namespace emvecre
             misParametros[1] = new SqlParameter("@repEfectivo", repEfectivo);
             misParametros[2] = new SqlParameter("@repTarjeta", repTarjeta);
 
+            SqlParameter[] parametroConsulta = new SqlParameter[] {
+
+                new SqlParameter("@fecha", fechaCorta)
+            };
+
 
             String sql = "INSERT INTO " + tablaCierreCaja + "(fecha,repEfectivo,repTarjeta)" +
                           " VALUES (@fecha,@repEfectivo,@repTarjeta)";
 
-            String consultar = "select * from "+ tablaCierreCaja +" where fecha ='"+fecha+"'";
+            String consultar = "select 1 from "+ tablaCierreCaja +" where fecha = @fecha";
 
-
-            
-
-            miDr = ConexSQL.consultarInformacionSinParm(consultar); 
+            miDr = objMiconexion.consultarInformacion(consultar, parametroConsulta); 
             miDr.Read();
-            if (miDr.HasRows)
+            if (miDr != null && miDr.HasRows)
             {
                 MessageBox.Show("EL CIERRE DE CAJA YA FUE CREADO");
             }
@@ -1656,5 +1661,68 @@ namespace emvecre
             
 ;        }
 
+        public void eliminarCierre(DateTime fecha)
+        {
+            decimal repEfectivo = 0;
+            decimal repTarjeta = 0;
+            bool existeRegistro = false;
+            ConexSQL objMiconexion = new ConexSQL();
+            SqlParameter[] misParametros = { new SqlParameter("@fecha", fecha) };
+
+            string sqlConsulta = "SELECT repEfectivo, repTarjeta FROM " + tablaCierreCaja + " WHERE fecha = @fecha";
+            SqlDataReader miDr = objMiconexion.consultarInformacion(sqlConsulta, misParametros);
+
+            using (miDr)
+            {
+                if (miDr != null && miDr.Read())
+                {
+                    int idxE = miDr.GetOrdinal("repEfectivo");
+                    int idxT = miDr.GetOrdinal("repTarjeta");
+
+                    repEfectivo = miDr.IsDBNull(idxE) ? 0m : miDr.GetDecimal(idxE);
+                    repTarjeta   = miDr.IsDBNull(idxT) ? 0m : miDr.GetDecimal(idxT);
+
+                    existeRegistro = true;
+
+                    string sql = "DELETE FROM " + tablaCierreCaja + " WHERE fecha = @fecha";
+                    objMiconexion.ejecutarSentencia(sql, misParametros);
+                }
+                if (existeRegistro)
+                {
+
+                   DialogResult confirmacion = MessageBox.Show("REPORTE DE CIERRE DE CAJA PARA LA FECHA: " + fecha.ToShortDateString() + "\n" +
+                        "REPORTE DE EFECTIVO: " + repEfectivo.ToString("C") + "\n" +
+                        "REPORTE DE TARJETA: " + repTarjeta.ToString("C")+ "\n\nDESEA ELIMINAR ESTE CIERRE?", "CONFIRMAR",MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (confirmacion ==DialogResult.Yes)
+                    {
+                        SqlParameter[] paramsDelete = { new SqlParameter("@fecha", fecha) };
+                        string sqlDelete = "DELETE FROM " + tablaCierreCaja + " WHERE fecha = @fecha";
+
+                        objMiconexion.ejecutarSentencia(sqlDelete, paramsDelete);
+                        MessageBox.Show("Registro eliminado correctamente.");
+                    }
+                }
+                
+                else
+                {
+                    MessageBox.Show("NO EXISTE UN CIERRE DE CAJA PARA ESTA FECHA");
+                }
+            }
+        }
+        
+        public void retirarEfectivo(DateTime fecha, decimal monto, string descripcion)
+        {
+            ConexSQL objMiconexion = new ConexSQL();
+            SqlParameter[] misParametros = new SqlParameter[3];
+            misParametros[0] = new SqlParameter("@fecha", fecha);
+            misParametros[1] = new SqlParameter("@monto", monto);
+            misParametros[2] = new SqlParameter("@descripcion", descripcion);
+
+            String sql = "INSERT INTO " + tablaRetiros + "(fecha,monto,descripcion)" +
+                          " VALUES (@fecha,@monto,@descripcion)";
+
+            objMiconexion.ejecutarSentencia(sql, misParametros);
+        }
     }
 }

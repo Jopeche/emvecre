@@ -43,6 +43,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblTipoPago = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -75,7 +77,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label3.Location = new System.Drawing.Point(23, 106);
+            this.label3.Location = new System.Drawing.Point(23, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 30);
             this.label3.TabIndex = 3;
@@ -105,7 +107,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvVenta.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvVenta.Enabled = false;
-            this.dgvVenta.Location = new System.Drawing.Point(0, 195);
+            this.dgvVenta.Location = new System.Drawing.Point(0, 221);
             this.dgvVenta.Name = "dgvVenta";
             this.dgvVenta.RowHeadersVisible = false;
             this.dgvVenta.Size = new System.Drawing.Size(803, 311);
@@ -138,7 +140,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.lblFecha.Location = new System.Drawing.Point(232, 109);
+            this.lblFecha.Location = new System.Drawing.Point(232, 149);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(76, 27);
             this.lblFecha.TabIndex = 7;
@@ -149,7 +151,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.lblTotal.Location = new System.Drawing.Point(232, 148);
+            this.lblTotal.Location = new System.Drawing.Point(232, 191);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(76, 27);
             this.lblTotal.TabIndex = 9;
@@ -160,7 +162,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.label8.Location = new System.Drawing.Point(23, 145);
+            this.label8.Location = new System.Drawing.Point(23, 188);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 30);
             this.label8.TabIndex = 8;
@@ -172,7 +174,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label14.Location = new System.Drawing.Point(2, 617);
+            this.label14.Location = new System.Drawing.Point(2, 643);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(155, 23);
             this.label14.TabIndex = 143;
@@ -182,7 +184,7 @@
             // 
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(12, 512);
+            this.btnEliminar.Location = new System.Drawing.Point(12, 538);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(132, 99);
             this.btnEliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,12 +208,36 @@
             this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.label4.Location = new System.Drawing.Point(23, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(186, 30);
+            this.label4.TabIndex = 145;
+            this.label4.Text = "TIPO DE PAGO:";
+            // 
+            // lblTipoPago
+            // 
+            this.lblTipoPago.AutoSize = true;
+            this.lblTipoPago.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.lblTipoPago.Location = new System.Drawing.Point(232, 110);
+            this.lblTipoPago.Name = "lblTipoPago";
+            this.lblTipoPago.Size = new System.Drawing.Size(76, 27);
+            this.lblTipoPago.TabIndex = 146;
+            this.lblTipoPago.Text = "label5";
+            // 
             // frmReporteVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(806, 706);
+            this.Controls.Add(this.lblTipoPago);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnEliminar);
@@ -252,5 +278,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox btnEliminar;
         private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label lblTipoPago;
     }
 }

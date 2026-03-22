@@ -81,7 +81,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCompras.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCompras.RowHeadersVisible = false;
-            this.dgvCompras.Size = new System.Drawing.Size(789, 368);
+            this.dgvCompras.Size = new System.Drawing.Size(798, 368);
             this.dgvCompras.TabIndex = 13;
             this.dgvCompras.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompras_CellClick);
             // 
@@ -169,7 +169,7 @@
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::Reportes.Properties.Resources.Salir;
-            this.btnSalir.Location = new System.Drawing.Point(778, 3);
+            this.btnSalir.Location = new System.Drawing.Point(787, -1);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(23, 21);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(806, 706);
+            this.ClientSize = new System.Drawing.Size(809, 706);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnBuscarProveedor);
             this.Controls.Add(this.BtnExpo);

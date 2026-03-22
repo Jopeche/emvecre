@@ -72,7 +72,7 @@ namespace Reportes
             int ancho = 600;
             int y = 20;
 
-            e.Graphics.DrawString("-----Repostería Laly&Lucy-----", font, Brushes.Black, new RectangleF(300,y+=30,ancho,20));
+            e.Graphics.DrawString("-----SODA EL BANCO-----", font, Brushes.Black, new RectangleF(300,y+=30,ancho,20));
             e.Graphics.DrawString("Factura# "+comprobante, font, Brushes.Black, new RectangleF(300, y += 20, ancho, 20));
             e.Graphics.DrawString("Fecha " +fecha, font, Brushes.Black, new RectangleF(300, y += 20, ancho, 20));
             e.Graphics.DrawString("Cliente " + cliente, font, Brushes.Black, new RectangleF(300, y += 20, ancho, 20));

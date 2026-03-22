@@ -155,16 +155,20 @@ namespace Reportes
 
                 string comprobante = "";
                 string cliente = "";
+                string tipoPago = "";
                 string fecha = "";
                 string total = "";
 
                 comprobante = dgvVentas.CurrentRow.Cells["COMPROBANTE"].Value.ToString();
                 cliente = dgvVentas.CurrentRow.Cells["NOMBRE CLIENTE"].Value.ToString();
+                tipoPago = dgvVentas.CurrentRow.Cells["TIPO PAGO"].Value.ToString();
                 fecha = dgvVentas.CurrentRow.Cells["FECHA"].Value.ToString();
                 total = dgvVentas.CurrentRow.Cells["TOTAL"].Value.ToString();
 
+
                 rv.lblComprobante.Text = comprobante;
                 rv.lblCliente.Text = cliente;
+                rv.lblTipoPago.Text = tipoPago;
                 rv.lblFecha.Text = fecha;
                 rv.lblTotal.Text = total;
 

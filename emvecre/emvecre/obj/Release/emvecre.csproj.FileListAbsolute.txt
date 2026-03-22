@@ -54,3 +54,4 @@ D:\Emvecre\emvecre\emvecre\obj\Release\emvecre.application
 D:\Emvecre\emvecre\emvecre\obj\Release\emvecre.csproj.Up2Date
 D:\Emvecre\emvecre\emvecre\obj\Release\emvecre.exe
 D:\Emvecre\emvecre\emvecre\obj\Release\emvecre.pdb
+D:\Emvecre\emvecre\emvecre\obj\Release\emvecre.exe.config

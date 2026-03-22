@@ -85,6 +85,9 @@ namespace Reportes
         {
 
             String queryReportes = "";
+            SqlParameter[] misParametros = new SqlParameter[2];
+            misParametros[0] = new SqlParameter("@desde", desde);
+            misParametros[1] = new SqlParameter("@hasta", hasta);
 
             try
             {
@@ -92,11 +95,13 @@ namespace Reportes
 
 
                 // query para buscar por vendedor y cliente
-                queryReportes = "SELECT tv.idVenta as COMPROBANTE, tv.fecha as FECHA, tc.nombre_cliente AS 'NOMBRE CLIENTE', tven.nombre as VENDEDOR,  tv.total as TOTAL FROM " + ConexTablas.tablaVendedor + " as tven, " + ConexTablas.tablaVentas + " as tv,"
+                queryReportes = "SELECT tv.idVenta as COMPROBANTE, tv.fecha as FECHA, tc.nombre_cliente AS 'NOMBRE CLIENTE',tv.tipoPago as 'TIPO PAGO', tven.nombre as VENDEDOR,  tv.total as TOTAL FROM " + ConexTablas.tablaVendedor + " as tven, " + ConexTablas.tablaVentas + " as tv,"
                 + ConexTablas.tablaClientes + " as tc " +
-            " where tven.idVendedor = tv.idVendedor and tc.idCliente = tv.idCliente and cast(tv.fecha as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "' order by " + "idVenta";
+            " where tven.idVendedor = tv.idVendedor and tc.idCliente = tv.idCliente and cast(tv.fecha as date) BETWEEN @desde and @hasta order by " + "idVenta";
 
                 System.Data.SqlClient.SqlCommand cmd = new SqlCommand(queryReportes, ConexSQL.miConexion);
+                cmd.Parameters.AddWithValue("@desde", desde.Value.Date);
+                cmd.Parameters.AddWithValue("@hasta", hasta.Value.Date);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -114,6 +119,10 @@ namespace Reportes
         {
 
             String queryReportes = "";
+            SqlParameter[] misParametros = new SqlParameter[2];
+            misParametros[0] = new SqlParameter("@desde", desde);
+            misParametros[1] = new SqlParameter("@hasta", hasta);
+
 
             try
             {
@@ -123,9 +132,11 @@ namespace Reportes
                 // query para buscar por vendedor y cliente
                 queryReportes = "SELECT tv.idVenta as COMPROBANTE, tv.fecha as FECHA, tc.nombre_cliente AS 'NOMBRE CLIENTE', tven.nombre as VENDEDOR,  tv.total as TOTAL FROM " + ConexTablas.tablaVendedor + " as tven  inner join " + ConexTablas.tablaVentas + " as tv on tv.idVendedor = tven.idVendedor inner join "
                 + ConexTablas.tablaClientes + " as tc on tv.idCliente = tc.idCliente " +
-            " where cast(tv.fecha as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "' and tc.nombre_cliente ='" + cliente + "' and tven.nombre='" + vendedor + "' order by " + "idVenta";
+            " where cast(tv.fecha as date) BETWEEN @desde and @hasta and tc.nombre_cliente ='" + cliente + "' and tven.nombre='" + vendedor + "' order by " + "idVenta";
 
                 System.Data.SqlClient.SqlCommand cmd = new SqlCommand(queryReportes, ConexSQL.miConexion);
+                cmd.Parameters.AddWithValue("@desde", desde.Value.Date);
+                cmd.Parameters.AddWithValue("@hasta", hasta.Value.Date);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -144,9 +155,13 @@ namespace Reportes
             {
 
                 String queryReportes = "";
+            SqlParameter[] misParametros = new SqlParameter[2];
+            misParametros[0] = new SqlParameter("@desde", desde);
+            misParametros[1] = new SqlParameter("@hasta", hasta);
 
-                try
-                {
+
+            try
+            {
 
 
 
@@ -155,11 +170,13 @@ namespace Reportes
                      ConexTablas.tablaVentas + " as tv inner join "
                    + ConexTablas.tablaVendedor + " as tven on tv.idVendedor = tven.idVendedor," +
                    ConexTablas.tablaClientes + " as tc  " +
-               " where tv.idVendedor = tven.idVendedor and  tv.idCliente = tc.idCliente and cast(tv.fecha as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "' and tven.nombre  ='" + vendedor + "' order by " + "idVenta";
+               " where tv.idVendedor = tven.idVendedor and  tv.idCliente = tc.idCliente and cast(tv.fecha as date) BETWEEN @desde and @hasta and tven.nombre  ='" + vendedor + "' order by " + "idVenta";
 
                 System.Data.SqlClient.SqlCommand cmd = new SqlCommand(queryReportes, ConexSQL.miConexion);
+                cmd.Parameters.AddWithValue("@desde", desde.Value.Date);
+                cmd.Parameters.AddWithValue("@hasta", hasta.Value.Date);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     dtv.DataSource = dt;
@@ -176,20 +193,26 @@ namespace Reportes
             {
 
                 String queryReportes = "";
+            SqlParameter[] misParametros = new SqlParameter[2];
+            misParametros[0] = new SqlParameter("@desde", desde);
+            misParametros[1] = new SqlParameter("@hasta", hasta);
 
-                try
-                {
+
+            try
+            {
 
                    // query para buscar por cliente
                     queryReportes = "SELECT tv.idVenta as COMPROBANTE, tv.fecha as FECHA, tc.nombre_cliente AS 'NOMBRE CLIENTE', tven.nombre as VENDEDOR,  tv.total as TOTAL FROM " +
                       ConexTablas.tablaVentas + " as tv inner join "
                     + ConexTablas.tablaClientes + " as tc on tv.idCliente = tc.idCliente," +
                     ConexTablas.tablaVendedor + " as tven  "+
-                " where tv.idCliente = tc.idCliente and tv.idVendedor = tven.idVendedor and cast(tv.fecha as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "' and tc.nombre_cliente ='" + cliente + "' order by " + "idVenta";
+                " where tv.idCliente = tc.idCliente and tv.idVendedor = tven.idVendedor and cast(tv.fecha as date) BETWEEN @desde and @hasta and tc.nombre_cliente ='" + cliente + "' order by " + "idVenta";
 
                     System.Data.SqlClient.SqlCommand cmd = new SqlCommand(queryReportes, ConexSQL.miConexion);
+                    cmd.Parameters.AddWithValue("@desde", desde.Value.Date);
+                    cmd.Parameters.AddWithValue("@hasta", hasta.Value.Date);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     dtv.DataSource = dt;
@@ -230,6 +253,10 @@ namespace Reportes
 
             String queryReportes = "";
 
+            SqlParameter[] misParametros = new SqlParameter[2];
+            misParametros[0] = new SqlParameter("@desde", desde);
+            misParametros[1] = new SqlParameter("@hasta", hasta);
+
             try
             {
                 if (prov == "")//si no se filtra por nombre de proveedor, se envian todas las compras que esten en el rango de fecha indicado
@@ -237,18 +264,20 @@ namespace Reportes
             
 
                     queryReportes = "SELECT tc.num_compra as COMPROBANTE,  tc.razon_social as PROVEEDOR, tc.fecha_compra AS FECHA, tc.total as TOTAL FROM " + ConexTablas.tablaCompra + " as tc " +
-                        " where cast(tc.fecha_compra as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "' order by " + "tc.fecha_compra";
+                        " where cast(tc.fecha_compra as date) BETWEEN @desde and @hasta order by " + "tc.fecha_compra";
 
                 }
                 else
                 {// en este query se carrgan las compras por nombre de proveedor y fecha
                     queryReportes = "SELECT tc.num_compra as COMPROBANTE,  tc.razon_social as PROVEEDOR, tc.fecha_compra AS FECHA, tc.total as TOTAL FROM " + ConexTablas.tablaCompra + " as tc " +
-                      " where tc.razon_social ='"+prov+"' and cast(tc.fecha_compra as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "' order by " + "tc.fecha_compra";
+                      " where tc.razon_social ='"+prov+ "' and cast(tc.fecha_compra as date) BETWEEN @desde and @hasta order by " + "tc.fecha_compra";
                 }
 
                 System.Data.SqlClient.SqlCommand cmd = new SqlCommand(queryReportes, ConexSQL.miConexion);
+                cmd.Parameters.AddWithValue("@desde",desde.Value.Date);
+                cmd.Parameters.AddWithValue("@hasta", hasta.Value.Date);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     dtv.DataSource = dt;
@@ -557,13 +586,19 @@ namespace Reportes
             {
 
                 String queryReportes = "";
+                SqlParameter[] misParametros = new SqlParameter[2];
+                misParametros[0] = new SqlParameter("@desde", desde);
+                misParametros[1] = new SqlParameter("@hasta", hasta);
+
 
                 queryReportes = "SELECT tdv.idVenta as COMPROBANTE, tdv.codigo1 as CODIGO, ta.nombre as ARTICULO, td.nombre as DEPARTAMENTO, " +
             "tdv.cantidad as CANTIDAD, tdv.Precio_venta as 'PRECIO VENTA'  FROM "+ConexTablas.tablaVentas+ " as tv INNER JOIN "
-            + ConexTablas.tabla_detalle_ventas + " as tdv on tv.idVenta = tdv.idVenta and cast(tv.fecha as date) BETWEEN '" + desde.Text + "' and '" + hasta.Text + "'  INNER JOIN " + ConexTablas.tablaArticulo + " as ta on tdv.codigo1 = ta.codigo1 INNER JOIN  " + ConexTablas.tablaDepartamento + " as td " +
+            + ConexTablas.tabla_detalle_ventas + " as tdv on tv.idVenta = tdv.idVenta and cast(tv.fecha as date) BETWEEN @desde and @hasta  INNER JOIN " + ConexTablas.tablaArticulo + " as ta on tdv.codigo1 = ta.codigo1 INNER JOIN  " + ConexTablas.tablaDepartamento + " as td " +
             " on ta.idDepartamento = td.idDepartamento and td.nombre= '" + dep + "'";
             
                 System.Data.SqlClient.SqlCommand cmd = new SqlCommand(queryReportes, ConexSQL.miConexion);
+                cmd.Parameters.AddWithValue("@desde", desde.Value.Date);
+                cmd.Parameters.AddWithValue("@hasta", hasta.Value.Date);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();

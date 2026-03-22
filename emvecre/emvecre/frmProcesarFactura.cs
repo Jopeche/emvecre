@@ -15,11 +15,14 @@ namespace emvecre
    
     public partial class frmProcesarFactura : Form
     {
-        
-   
+        private decimal cambio;
+
+
         public frmProcesarFactura()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(frmProcesarFactura_KeyDown);
         }
 
         //carga los datos necesarios
@@ -35,21 +38,22 @@ namespace emvecre
         private void txtPaga_KeyDown(object sender, KeyEventArgs e)
         {
             
-            if (e.KeyValue == (char)Keys.Enter && txtEfectivo.Text != "")
+            if (e.KeyValue == (char)Keys.Enter && txtEfectivo.Text != "" || e.KeyCode == Keys.F5)
             {
                 decimal total = Convert.ToDecimal(lblTotal.Text);
                 decimal paga = Convert.ToDecimal(txtEfectivo.Text);
                 if (paga >= total)
                 {
-                    decimal cambio = paga - total;
+                    cambio = paga - total;
                     lblCambio.Text = cambio.ToString();
                     btnFacturar.Enabled = true;
                     btnFacturar.Focus();
                     btnFacturar.BackColor = Color.LightBlue;
+                  
                 }
                 else
                 {
-                    decimal cambio = paga - total;
+                    cambio = paga - total;
                     lblCambio.Text = cambio.ToString();
                     MessageBox.Show("FALTA DINERO PARA CANCELAR LA FACTURA: " + cambio);
                   
@@ -66,14 +70,14 @@ namespace emvecre
                 decimal paga = Convert.ToDecimal(txtEfectivo.Text);
                 if (paga >= total)
                 {
-                    decimal cambio = paga - total;
+                    cambio = paga - total;
                     lblCambio.Text = cambio.ToString();
                     btnFacturar.Enabled = true;
-                    btnFacturar.Focus();
+                    txtEfectivo.Focus();
                 }
                 else if (btnFacturar.Enabled == true)
                 {
-                    decimal cambio = paga - total;
+                    cambio = paga - total;
                     lblCambio.Text = cambio.ToString();
                     MessageBox.Show("FALTA DINERO PARA CANCELAR LA FACTURA: " + cambio);
                     btnFacturar.Enabled = false;
@@ -94,6 +98,8 @@ namespace emvecre
         private void btnFacturar_Click_1(object sender, EventArgs e)
         {
             frmFacturar f1 = Application.OpenForms.OfType<frmFacturar>().SingleOrDefault();
+
+            lblCambio.Text = cambio.ToString();
 
             if (rdbEfectivo.Checked == true)
             {
@@ -118,10 +124,9 @@ namespace emvecre
             else { 
             if (f1 != null)
             {
-
-                f1.permitir = true;
-               
-                this.Close();
+                    MessageBox.Show("SU VUELTO: " + cambio, "ACEPTAR");
+                    f1.permitir = true;
+                    this.Close();
                 }
 
             
@@ -234,10 +239,58 @@ namespace emvecre
                 if (f1 != null)
                 {
                     f1.permitir = true;
-
                     this.Close();
                 }
             }
+        }
+
+        private void frmProcesarFactura_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            frmFacturar f1 = Application.OpenForms.OfType<frmFacturar>().SingleOrDefault();
+
+            if (e.KeyCode==Keys.F5)
+            {
+                e.SuppressKeyPress = true;
+                cambio = Convert.ToDecimal(txtEfectivo.Text) - Convert.ToDecimal(lblTotal.Text);
+                lblCambio.Text = cambio.ToString();
+
+                if (rdbEfectivo.Checked == true)
+                {
+                    f1.tipoPago = "Efectivo";
+
+                }
+                if (rdbTarjeta.Checked == true)
+                {
+                    f1.tipoPago = "Tarjeta";
+                }
+                if (rdbTransferencia.Checked == true)
+                {
+                    f1.tipoPago = "Transferencia";
+                }
+
+                if (txtEfectivo.Text == "" || txtEfectivo.Text == "." || Convert.ToDouble(txtEfectivo.Text) == 0 || Convert.ToDouble(txtEfectivo.Text) < Convert.ToDouble(lblTotal.Text))
+                {
+                    txtEfectivo.Text = lblTotal.Text;
+                    lblCambio.Text = "0";
+                    MessageBox.Show("El efectivo no puede ser inferior al monto a pagar");
+                }
+                else
+                {
+                    if (f1 != null)
+                    {
+
+                        MessageBox.Show("SU VUELTO: " + cambio, "ACEPTAR");
+                        f1.permitir = true;
+                        this.Close();
+                    }
+
+
+                }
+
+            }
+
+           
         }
     }
 }

@@ -102,7 +102,7 @@ namespace emvecre
         //abre el formulario de ventas en el panel
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            abrirFormulario<frmVentas>();
+
         }
         //cierra el formulario ventas en caso de que este abierto
         private void btnDevolucion_Click(object sender, EventArgs e)

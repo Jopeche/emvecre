@@ -95,8 +95,8 @@ namespace emvecre
             dgvFactura.Columns.Add("Subtotal", "Subtotal");
 
             DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
-            btnDelete.Name = "Eliminar Articulo";
-            btnDelete.HeaderText = "Eliminar Articulo";
+            btnDelete.Name = " ";
+            btnDelete.HeaderText = " ";
             btnDelete.UseColumnTextForButtonValue = true;
             btnDelete.CellTemplate.Style.BackColor = Color.Red;
             dgvFactura.Columns.Add(btnDelete);
@@ -330,7 +330,7 @@ namespace emvecre
 
 
 
-                if (dgvFactura.CurrentRow.Cells["Eliminar Articulo"].Selected)
+                if (dgvFactura.CurrentRow.Cells[" "].Selected)
                 {
                     resultado = MessageBox.Show("Desea eliminar la fila selecionada?", "ELIMINAR", MessageBoxButtons.YesNo);
 
@@ -355,11 +355,11 @@ namespace emvecre
         //metodo para agregar el icono eliminar en la ultima columna
         private void dgvFactura_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            if (e.ColumnIndex >= 0 && this.dgvFactura.Columns[e.ColumnIndex].Name == "Eliminar Articulo" && e.RowIndex >= 0)
+            if (e.ColumnIndex >= 0 && this.dgvFactura.Columns[e.ColumnIndex].Name == " " && e.RowIndex >= 0)
             {
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-                DataGridViewButtonCell celBoton = this.dgvFactura.Rows[e.RowIndex].Cells["Eliminar Articulo"] as DataGridViewButtonCell;
+                DataGridViewButtonCell celBoton = this.dgvFactura.Rows[e.RowIndex].Cells[" "] as DataGridViewButtonCell;
                 Icon iconoEliminar = new Icon(Environment.CurrentDirectory + @"\imagenes\Eliminar.ico");
 
                 e.Graphics.DrawIcon(iconoEliminar, e.CellBounds.Left + 20, e.CellBounds.Top + 3);
@@ -553,16 +553,6 @@ namespace emvecre
 
 
     
-
-        //metodo para evitar que el usuario valide una cantidad nula o igual a cero dentro de las celdas
-        private void dgvFactura_CellValidated(object sender, DataGridViewCellEventArgs e)
-        {
-            string p = dgvFactura.CurrentCell.EditedFormattedValue.ToString();
-            if (p == "")
-            {
-                dgvFactura.CurrentCell.Value = 1;
-            }
-        }
 
         private void txtTotal_TextChanged(object sender, EventArgs e)
         {

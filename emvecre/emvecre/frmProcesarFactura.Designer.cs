@@ -210,6 +210,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProcesarFactura";
             this.Load += new System.EventHandler(this.frmProcesarFactura_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProcesarFactura_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFacturar)).EndInit();
             this.ResumeLayout(false);

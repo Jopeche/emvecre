@@ -184,5 +184,10 @@ namespace emvecre
                 MessageBox.Show("Debe selecionar un cliente");
             }
         }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
