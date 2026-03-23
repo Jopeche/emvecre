@@ -39,6 +39,8 @@ namespace emvecre
             crearTablas.crear_tabla_detalle_ventas(); //creacion de la tabla Detalle ventas
             crearTablas.crearusuarios(); //creacion de la tabla usuarios                              
             crearTablas.crear_tabla_cierre_caja(); //Creacion de la tabla cierre de caja
+            crearTablas.crear_tabla_retiros(); //Creacion de la tabla de retiros de efectivo
+            crearVistas.crearVistas1(); //creacion de las vistas para los reportes
 
             iniciarProyecto();
         }
@@ -109,10 +111,6 @@ namespace emvecre
             this.Close();
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
 
         //verifica si el usuario es de tipo administrador
         private void btnIngresar_Click(object sender, EventArgs e)

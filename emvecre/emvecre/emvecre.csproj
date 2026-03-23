@@ -102,10 +102,16 @@
       <DependentUpon>Cierre.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Cierre1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cierre.rpt</DependentUpon>
+    </Compile>
     <Compile Include="ClsMensaje.cs" />
     <Compile Include="ConexSQL.cs" />
     <Compile Include="ConexTablas.cs" />
     <Compile Include="CrearTablas.cs" />
+    <Compile Include="crearVistas.cs" />
     <Compile Include="ElemenFactura.cs" />
     <Compile Include="Facturas.cs" />
     <Compile Include="frmArticulos.cs">
@@ -186,6 +192,12 @@
     <Compile Include="frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRetiroEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetiroEfectivo.Designer.cs">
+      <DependentUpon>frmRetiroEfectivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,7 +223,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cierre.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Cierre.cs</LastGenOutput>
+      <LastGenOutput>Cierre1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmArticulos.resx">
       <DependentUpon>frmArticulos.cs</DependentUpon>
@@ -251,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetiroEfectivo.resx">
+      <DependentUpon>frmRetiroEfectivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
@@ -393,6 +408,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Retirar.png" />
     <Content Include="Resources\Vendedores.png" />
   </ItemGroup>
   <ItemGroup>

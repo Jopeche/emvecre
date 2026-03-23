@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRetirar = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCierreCaja = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.btnReimprimir = new System.Windows.Forms.PictureBox();
             this.btnFacturar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRetirar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCierreCaja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDevolucion)).BeginInit();
@@ -59,7 +59,6 @@
             this.panelOperaciones.Name = "panelOperaciones";
             this.panelOperaciones.Size = new System.Drawing.Size(665, 699);
             this.panelOperaciones.TabIndex = 3;
-            this.panelOperaciones.Paint += new System.Windows.Forms.PaintEventHandler(this.panelOperaciones_Paint);
             // 
             // label1
             // 
@@ -101,7 +100,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnRetirar);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnCierreCaja);
             this.panel1.Controls.Add(this.label5);
@@ -118,16 +117,20 @@
             this.panel1.Size = new System.Drawing.Size(135, 706);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // btnRetirar
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 330);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
+            this.btnRetirar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRetirar.ErrorImage = null;
+            this.btnRetirar.Image = global::emvecre.Properties.Resources.Retirar1;
+            this.btnRetirar.Location = new System.Drawing.Point(32, 330);
+            this.btnRetirar.Name = "btnRetirar";
+            this.btnRetirar.Size = new System.Drawing.Size(69, 44);
+            this.btnRetirar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnRetirar.TabIndex = 23;
+            this.btnRetirar.TabStop = false;
+            this.btnRetirar.Click += new System.EventHandler(this.btnRetirar_Click);
+            this.btnRetirar.MouseEnter += new System.EventHandler(this.btnRetirar_MouseEnter);
+            this.btnRetirar.MouseLeave += new System.EventHandler(this.btnRetirar_MouseLeave);
             // 
             // label4
             // 
@@ -242,7 +245,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRetirar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCierreCaja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDevolucion)).EndInit();
@@ -265,7 +268,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnCierreCaja;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnRetirar;
     }
 }
 

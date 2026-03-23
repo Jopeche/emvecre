@@ -239,14 +239,14 @@
         </dependentAssembly>
     </dependency>
     <dependency>
-        <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="emvecre.exe" size="5918128">
+        <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="emvecre.exe" size="5967792">
             <assemblyIdentity name="emvecre" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
             <hash>
                 <dsig:Transforms>
                     <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
                 </dsig:Transforms>
                 <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-                <dsig:DigestValue>Ki1lxICtFYB2fUzT/opQRAE+Yk4cml6ttMNztHlejV4=</dsig:DigestValue>
+                <dsig:DigestValue>UzrbRnmMzuVJoq+Lji9EFwRgKjfXBaMC/X6G8aAD9Xw=</dsig:DigestValue>
             </hash>
         </dependentAssembly>
     </dependency>

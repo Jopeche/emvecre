@@ -149,9 +149,20 @@ namespace emvecre
             btnCierreCaja.BackColor = Color.White;
         }
 
-        private void panelOperaciones_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void btnRetirar_MouseEnter(object sender, EventArgs e)
+        {
+            btnRetirar.BackColor = Color.LightBlue;
+        }
+
+        private void btnRetirar_MouseLeave(object sender, EventArgs e)
+        {
+            btnRetirar.BackColor = Color.White;
+        }
+
+        private void btnRetirar_Click(object sender, EventArgs e)
+        {
+            abrirFormulario<frmRetiroEfectivo>();
         }
     }
 }

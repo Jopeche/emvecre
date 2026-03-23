@@ -153,6 +153,8 @@
             this.btnEliminar.TabIndex = 140;
             this.btnEliminar.TabStop = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btnEliminar.MouseEnter += new System.EventHandler(this.btnEliminar_MouseEnter);
+            this.btnEliminar.MouseLeave += new System.EventHandler(this.btnEliminar_MouseLeave);
             // 
             // frmCierreCaja
             // 

@@ -129,5 +129,15 @@ namespace emvecre
             DateTime fecha = DateTime.Today;
             ct.eliminarCierre(fecha);
         }
+
+        private void btnEliminar_MouseEnter(object sender, EventArgs e)
+        {
+            btnEliminar.BackColor = Color.LightBlue;
+        }
+
+        private void btnEliminar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEliminar.BackColor = Color.White;
+        }
     }
 }

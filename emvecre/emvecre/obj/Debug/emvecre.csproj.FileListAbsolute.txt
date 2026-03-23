@@ -159,3 +159,4 @@ D:\Emvecre\emvecre\emvecre\obj\Debug\emvecre.csproj.Up2Date
 D:\Emvecre\emvecre\emvecre\obj\Debug\emvecre.exe
 D:\Emvecre\emvecre\emvecre\obj\Debug\emvecre.pdb
 D:\Emvecre\emvecre\emvecre\obj\Debug\emvecre.exe.config
+D:\Emvecre\emvecre\emvecre\obj\Debug\emvecre.frmRetiroEfectivo.resources

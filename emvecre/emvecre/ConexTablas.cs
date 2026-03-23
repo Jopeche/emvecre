@@ -1644,7 +1644,7 @@ namespace emvecre
             DateTime fecha = DateTime.Today;
             CrystalReportViewer view = new CrystalReportViewer();
             ConexSQL objMiconexion = new ConexSQL();
-            string sql = "select * from ventas; select * from CierreCaja;";    
+            string sql = "select * from ventas; select * from CierreCaja; select * from Retiros;";    
             System.Data.SqlClient.SqlCommand cmd = new SqlCommand(sql, ConexSQL.miConexion);
 
             DataSet ds = new DataSet();
